@@ -1,0 +1,97 @@
+
+.custom-image {
+    width: 400px;
+    height: auto;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fafbff;
+}
+.custom-image p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #878a9a;
+}
+
+.custom-image .drag-area {
+	width: 100%;
+	height: 160px;
+	border-radius: 5px;
+	border: 2px dashed #d5d5e1;
+	color: #c8c9dd;
+	font-size: 0.9rem;
+	font-weight: 500;
+	position: relative;
+	background: #dfe3f259;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	-webkit-user-select: none;
+	margin-top: 10px;
+}
+
+.custom-image .drag-area .visible {
+	font-size: 18px;
+}
+.custom-image .select {
+    color: #5256ad;
+	margin-left: 5px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.custom-image .select:hover {
+	opacity: 0.6;
+}
+
+.custom-image .container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	max-height: 200px;
+	overflow-y: auto;
+	margin-top: 10px;
+}
+
+.custom-image .container .image {
+	width: calc(26% - 19px);
+	margin-right: 15px;
+	height: 75px;
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.custom-image .container .image img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.custom-image .container .image span {
+	position: absolute;
+	top: -2px;
+	right: 9px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/* dragover class will used in drag and drop system */
+.custom-image .drag-area.dragover {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.custom-image .drag-area.dragover .on-drop {
+	display: inline;
+	font-size: 28px;
+}
+
+.custom-image input,
+.custom-image .drag-area .on-drop, 
+.custom-image .drag-area.dragover .visible {
+	display: none;
+}
