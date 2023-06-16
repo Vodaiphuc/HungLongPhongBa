@@ -11,15 +11,17 @@
 						<div class="col-lg-5 col-md-6">
 							<div class="banner-content">
 								<h1>
-									Nike New <br>Collection!
+									<Br> Bộ sưu tập <br>mới của Nike!
 								</h1>
-								<p>Created for the hardwood but taken to the streets, the
-									'80s b-ball icon returns with winter-ready details. From soft
-									fleece to cheerful graphics, it brings cabin comfort while
-									letting you channel vintage hoops style back onto the streets.</p>
+								<p>Được tạo ra cho gỗ cứng nhưng được đưa ra đường phố, biểu
+									tượng b-ball của thập niên 80 trở lại với các chi tiết sẵn sàng
+									cho mùa đông. Từ lông cừu mềm mại đến đồ họa tươi vui, nó mang
+									đến sự thoải mái trong cabin đồng thời cho phép bạn đưa phong
+									cách hoops cổ điển trở lại đường phố.</p>
 								<div class="add-bag d-flex align-items-center">
 									<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-									<span class="add-text text-uppercase">Add to Bag</span>
+									<span class="add-text text-uppercase">Thêm vào Giỏ Hàng
+									</span>
 								</div>
 							</div>
 						</div>
@@ -36,16 +38,18 @@
 						<div class="col-lg-5">
 							<div class="banner-content">
 								<h1>
-									Nike New <br>Collection!
+									<Br> Bộ sưu tập <br>mới của Nike!
 								</h1>
-								<p>We prioritise comfort, especially for our growing
-									athletes. Made with 20% recycled content by weight, you can
-									take these lightweight, breathable running shoes from all-day
-									play to any-time wear and even athletics training. Lightweight,
-									breathable and cushioned for growing feet, the race starts now.</p>
+								<p>Chúng tôi ưu tiên sự thoải mái, đặc biệt là cho các vận
+									động viên đang phát triển của chúng tôi. Được làm bằng 20%
+									​​hàm lượng tái chế tính theo trọng lượng, bạn có thể mang
+									những đôi giày chạy bộ nhẹ, thoáng khí này để chơi cả ngày cho
+									đến mang bất cứ lúc nào và thậm chí là tập luyện điền kinh.
+									Nhẹ, thoáng khí và đệm cho bàn chân đang phát triển, cuộc đua
+									bắt đầu ngay bây giờ.​</p>
 								<div class="add-bag d-flex align-items-center">
 									<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-									<span class="add-text text-uppercase">Add to Bag</span>
+									<span class="add-text text-uppercase">Thêm vào Giỏ Hàng</span>
 								</div>
 							</div>
 						</div>

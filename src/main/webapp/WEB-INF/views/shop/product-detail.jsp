@@ -8,12 +8,13 @@
 		<div
 			class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 			<div class="col-first">
-				<h1>Product Details Page</h1>
+				<h1>Trang chi tiết sản phẩm</h1>
 				<nav class="d-flex align-items-center">
-					<a href="/shop/home">Home<span class="lnr lnr-arrow-right"></span></a>
-					<a href="/shop/shop-category">Shop<span
-						class="lnr lnr-arrow-right"></span></a> <a
-						href="/shop/product-detail?id=${product.id }">product-details</a>
+					<a href="/shop/home">Trang chủ <span
+						class="lnr lnr-arrow-right"></span></a> <a href="/shop/shop-category">Cửa
+						hàng<span class="lnr lnr-arrow-right"></span>
+					</a> <a href="/shop/product-detail?id=${product.id }">Thông tin chi
+						tiết sản phẩm </a>
 				</nav>
 			</div>
 		</div>
@@ -55,7 +56,7 @@
 						<li><a class="active"
 							href="/shop/shop-category?categoryProduct_id=${product.categoryProduct.id }&size=40"><span>Category</span>
 								: ${product.categoryProduct.name }</a></li>
-						<li><a href="#"><span>Availibility</span> : In Stock</a></li>
+						<li><a href="#"><span>khả dụng </span> : Trong kho </a></li>
 						<li><a class="active"
 							href="/shop/shop-category?brand_id=${product.brand.id }&size=40"><span>Brand</span>
 								: ${product.brand.name }</a></li>
@@ -101,12 +102,12 @@
 						<tbody>
 							<tr>
 								<td>
-									<h5>Width</h5>
+									<h5>Chiều rộng</h5>
 								</td>
 								<td>
 									<h5>
 										<c:if test="${product.width == '0' }">
-											<span>Updatting ...</span>
+											<span>Đang cập nhật ...</span>
 										</c:if>
 										<c:if test="${product.width != '0' }">
 											<span>${product.width } mm</span>
@@ -116,12 +117,12 @@
 							</tr>
 							<tr>
 								<td>
-									<h5>Height</h5>
+									<h5>Chiều cao</h5>
 								</td>
 								<td>
 									<h5>
 										<c:if test="${product.height == '0' }">
-											<span>Updatting ...</span>
+											<span>Đang cập nhật ...</span>
 										</c:if>
 										<c:if test="${product.height != '0' }">
 											<span>${product.height } mm</span>
@@ -131,12 +132,12 @@
 							</tr>
 							<tr>
 								<td>
-									<h5>Depth</h5>
+									<h5>Chiều sâu</h5>
 								</td>
 								<td>
 									<h5>
 										<c:if test="${product.depth == '0' }">
-											<span>Updatting ...</span>
+											<span>Đang cập nhật ...</span>
 										</c:if>
 										<c:if test="${product.depth != '0' }">
 											<span>${product.depth } mm</span>
@@ -146,12 +147,12 @@
 							</tr>
 							<tr>
 								<td>
-									<h5>Weight</h5>
+									<h5>Cân nặng</h5>
 								</td>
 								<td>
 									<h5>
 										<c:if test="${product.weight == '0' }">
-											<span>Updatting ...</span>
+											<span>Đang cập nhật ...</span>
 										</c:if>
 										<c:if test="${product.weight != '0' }">
 											<span>${product.weight } mm</span>
@@ -170,14 +171,14 @@
 						<div class="row total_rate">
 							<div class="col-6">
 								<div class="box_total">
-									<h5>Overall</h5>
+									<h5>Tổng thể</h5>
 									<h4>${totailStar }</h4>
 									<h6>(${totailReview } Reviews)</h6>
 								</div>
 							</div>
 							<div class="col-6">
 								<div class="rating_list">
-									<h3>Based on ${totailReview } Reviews</h3>
+									<h3>Dựa trên ${totailReview } Đánh giá</h3>
 									<ul class="list">
 										<c:forEach var="item" items="${listNumberReviewStar }"
 											varStatus="loopCounter">
@@ -233,8 +234,8 @@
 										value="${sessionScope['shop'].getFullName()}" />
 								</c:if>
 								<div class="col-md-12">
-									<h4>Add a Review</h4>
-									<p>Your Rating:</p>
+									<h4>Thêm một bài đánh giá</h4>
+									<p>Đánh giá của bạn :</p>
 									<div class="rating-wrapper">
 										<form:radiobutton path="star" id="5-star-rating"
 											name="star-rating" value="5" />
@@ -262,7 +263,7 @@
 											class="fa fa-star d-inline-block"></i>
 										</label>
 									</div>
-									<p>Outstanding</p>
+									<p>Nổi bật</p>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">

@@ -6,10 +6,10 @@
 		<div
 			class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 			<div class="col-first">
-				<h1>Order tracking</h1>
+				<h1>theo dõi đơn hàng</h1>
 				<nav class="d-flex align-items-center">
-					<a href="/shop/home">Home<span class="lnr lnr-arrow-right"></span></a>
-					<a href="/shop/tracking">Tracking</a>
+					<a href="/shop/home">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/tracking">theo dõi </a>
 				</nav>
 			</div>
 		</div>
@@ -22,9 +22,10 @@
 			</b>
 		</c:if>
 		<div class="tracking_box_inner">
-			<p>To track your order please enter your Order ID in the box
-				below and press the "Track" button. This was given to you on your
-				receipt and in the confirmation email you should have received.</p>
+			<p>Để theo dõi đơn hàng của bạn, vui lòng nhập ID đơn hàng của
+				bạn vào ô bên dưới và nhấn nút "Theo dõi". Điều này đã được trao cho
+				bạn trên của bạn biên nhận và trong email xác nhận mà lẽ ra bạn phải
+				nhận được.</p>
 			<form class="row tracking_form" action="/shop/tracking/submit">
 				<div class="col-md-12 form-group">
 					<input type="text" class="form-control" id="id_cart" name="id_cart"
@@ -32,8 +33,8 @@
 						onblur="this.placeholder = 'Order ID'">
 				</div>
 				<div class="col-md-12 form-group">
-					<button type="submit" value="submit" class="primary-btn">Track
-						Order</button>
+					<button type="submit" value="submit" class="primary-btn">Theo
+						dõi Đặt hàng</button>
 				</div>
 			</form>
 		</div>

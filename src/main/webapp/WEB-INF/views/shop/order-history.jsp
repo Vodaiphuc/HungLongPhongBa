@@ -7,10 +7,10 @@
 		<div
 			class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 			<div class="col-first">
-				<h1>Order history</h1>
+				<h1>Lịch sử đơn hàng</h1>
 				<nav class="d-flex align-items-center">
-					<a href="/shop/home">Home<span class="lnr lnr-arrow-right"></span></a>
-					<a href="/shop/order-history">Order history</a>
+					<a href="/shop/home">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/order-history">Lịch sử đơn hàng </a>
 				</nav>
 			</div>
 		</div>
@@ -21,18 +21,18 @@
 	<div class="container">
 		<div class="section">
 			<c:if test="${empty list }">
-				<h3 class="title_confirmation text-center text-danger m-4">You
-					don't have any orders yet.</h3>
+				<h3 class="title_confirmation text-center text-danger m-4">Bạn
+					chưa có đơn hàng nào.</h3>
 			</c:if>
 			<c:if test="${not empty list }">
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
 							<div class="serial">#</div>
-							<div class="image">ID order</div>
-							<div class="name">Status</div>
-							<div class="day">Pay</div>
-							<div class="action">Action</div>
+							<div class="image">ID đặt hàng</div>
+							<div class="name">Trạng thái</div>
+							<div class="day">Chi trả</div>
+							<div class="action">Hoạt động</div>
 						</div>
 						<c:forEach var="item" items="${list }" varStatus="loopCounter">
 							<div class="table-row">
@@ -59,7 +59,7 @@
 								</div>
 								<div class="action">
 									<a href="/shop/confirmation?id_cart=${item.id }"
-										class="genric-btn info radius">View</a>
+										class="genric-btn info radius">Xem thêm</a>
 								</div>
 							</div>
 						</c:forEach>

@@ -14,7 +14,7 @@ import com.example.validator.constraint.EndDayDiscountValidator;
 @Target({ ElementType.METHOD, ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface EndDayDiscount {
-	public String message() default "End date must be greater than start date";
+	public String message() default "Ngày kết thúc phải lớn hơn ngày bắt đầu";
 
 	public Class<?>[] groups() default {};
 

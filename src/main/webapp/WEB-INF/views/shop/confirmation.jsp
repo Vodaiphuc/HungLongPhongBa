@@ -7,13 +7,14 @@
 		<div
 			class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 			<div class="col-first">
-				<h1>Confirmation</h1>
+				<h1>xác nhận</h1>
 				<nav class="d-flex align-items-center">
-					<a href="/shop/home">Home<span class="lnr lnr-arrow-right"></span></a>
-					<a href="/shop/cart">Cart<span class="lnr lnr-arrow-right"></span></a>
-					<a href="/shop/checkout">Checkout<span
-						class="lnr lnr-arrow-right"></span></a> <a href="/shop/confirmation">Confirmation<span
-						class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/home">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/cart">giỏ hàng<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/checkout">Thủ tục thanh toán <span
+						class="lnr lnr-arrow-right"></span></a> <a href="/shop/confirmation">xác
+						nhận <span class="lnr lnr-arrow-right"></span>
+					</a>
 				</nav>
 			</div>
 		</div>
@@ -22,8 +23,8 @@
 <section class="order_details section_gap">
 	<div class="container">
 		<c:if test="${empty list }">
-			<h3 class="title_confirmation text-center text-danger m-4">You
-				have not rated any products yet.</h3>
+			<h3 class="title_confirmation text-center text-danger m-4">Bạn
+				chưa đánh giá sản phẩm nào.</h3>
 		</c:if>
 		<c:if test="${not empty list }">
 			<c:set var="totailCart" value="0" />
@@ -48,39 +49,40 @@
 					<c:set var="totalDiscount" value="${totalDiscount }" />
 				</c:if>
 			</c:forEach>
-			<h3 class="title_confirmation">Thank you. Your order has been
-				received.</h3>
+			<h3 class="title_confirmation">Cảm ơn. Đơn đặt hàng của bạn đã
+				được đã nhận.</h3>
 			<div class="row order_d_inner">
 				<div class="col-lg-6">
 					<div class="details_item">
-						<h4>Order Info</h4>
+						<h4>Thông tin đặt hàng</h4>
 						<ul class="list">
-							<li><a href="#"><span>Order id</span> : ${order.id }</a></li>
-							<li><a href="#"><span>Date</span> : <fmt:formatDate
+							<li><a href="#"><span>id đơn đặt hàng </span> :
+									${order.id }</a></li>
+							<li><a href="#"><span>Ngày</span> : <fmt:formatDate
 										pattern="dd-MM-yyyy" value="${order.createdDate }" /></a></li>
-							<li><a href="#"><span>Total</span> : $${totailCart }</a></li>
-							<li><a href="#"><span>Payment method</span> :
+							<li><a href="#"><span>tổng tiền</span> : $${totailCart }</a></li>
+							<li><a href="#"><span>Phương thức thanh toán </span> :
 									${order.pay }</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="details_item">
-						<h4>Shipping Address</h4>
+						<h4>Địa chỉ giao hàng</h4>
 						<ul class="list">
-							<li><a href="#"><span>Full name</span> :
+							<li><a href="#"><span>Họ và tên</span> :
 									${order.fullName }</a></li>
 							<li><a href="#"><span>Email</span> : ${order.email }</a></li>
-							<li><a href="#"><span>Address</span> :
+							<li><a href="#"><span>Địa chỉ</span> :
 									${order.addressOrder }</a></li>
-							<li><a href="#"><span>Postcode </span> : ${order.zip }</a></li>
+							<li><a href="#"><span>mã bưu điện </span> : ${order.zip }</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="order_details_table">
 				<h2>
-					Order Details -
+					Chi tiết đặt hàng -
 					<c:if test="${order.status == 'waiting' }">
 						<span class="text-danger">${order.status }</span>
 					</c:if>
@@ -95,17 +97,17 @@
 					<table class="table text-center">
 						<thead>
 							<tr>
-								<th scope="col">Product</th>
-								<th scope="col">Quantity
+								<th scope="col">Sản phẩm</th>
+								<th scope="col">Số lượng
 									<p>(*1*)</p>
 								</th>
-								<th scope="col">Discount
+								<th scope="col">Giảm giá
 									<p>(*2*)</p>
 								</th>
-								<th scope="col">Price
+								<th scope="col">Giá
 									<p>(*3*)</p>
 								</th>
-								<th scope="col">Total
+								<th scope="col">Tổng cộng
 									<p>(*4 = (1 * 3) - (1 * 3 * 2%)*)</p>
 								</th>
 							</tr>
@@ -139,7 +141,7 @@
 							</c:forEach>
 							<tr>
 								<td>
-									<h4>Subtotal</h4>
+									<h4>tổng phụ</h4>
 								</td>
 								<td>
 									<h5></h5>
@@ -156,7 +158,7 @@
 							</tr>
 							<tr>
 								<td>
-									<h4>TotalDiscount</h4>
+									<h4>Tổng khấu trừ</h4>
 								</td>
 								<td>
 									<h5></h5>
@@ -173,7 +175,7 @@
 							</tr>
 							<tr>
 								<td>
-									<h4>Total</h4>
+									<h4>Tổng cộng</h4>
 								</td>
 								<td>
 									<h5></h5>

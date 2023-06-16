@@ -14,7 +14,7 @@ import com.example.validator.constraint.ZipCodeValidator;
 @Target({ ElementType.METHOD, ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ZipCode {
-	public String message() default "Zip code of 6 digits";
+	public String message() default "Mã zip gồm 6 chữ số";
 
 	public Class<?>[] groups() default {};
 

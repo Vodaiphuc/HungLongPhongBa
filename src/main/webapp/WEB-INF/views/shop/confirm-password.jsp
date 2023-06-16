@@ -7,10 +7,10 @@
 		<div
 			class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 			<div class="col-first">
-				<h1>Confirm password</h1>
+				<h1>Xác nhận mật khẩu</h1>
 				<nav class="d-flex align-items-center">
-					<a href="/shop/home">Home<span class="lnr lnr-arrow-right"></span></a>
-					<a href="/shop/account/confirm-password">Confirm password</a>
+					<a href="/shop/home">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/account/confirm-password">Xác nhận mật khẩu</a>
 				</nav>
 			</div>
 		</div>
@@ -24,16 +24,17 @@
 					<img class="img-fluid"
 						src="<c:url value="/static/shop/img/login.jpg" />" alt="">
 					<div class="hover">
-						<h4>New to our website?</h4>
-						<p>There are advances being made in science and technology
-							everyday, and a good example of this is the</p>
-						<a class="primary-btn" href="/shop/account/login">Login shop</a>
+						<h4>Mới vào trang web của chúng tôi?</h4>
+						<p>Mỗi ngày có những tiến bộ được đạt được trong khoa học và
+							công nghệ, và một ví dụ tốt về điều này là</p>
+						<a class="primary-btn" href="/shop/account/login">Đăng nhập
+							vào cửa hàng</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="login_form_inner">
-					<h3>Confirm password an account</h3>
+					<h3>Xác nhận mật khẩu tài khoản</h3>
 					<c:if test="${not empty error}">
 						<b class="error text-danger"> <c:out value="${error}" />
 						</b>
@@ -59,7 +60,7 @@
 							<form:errors path="passwordAgain" class="error text-danger" />
 						</div>
 						<div class="col-md-12 form-group">
-							<button type="submit" value="submit" class="primary-btn">Submit</button>
+							<button type="submit" value="submit" class="primary-btn">Gửi</button>
 						</div>
 					</form:form>
 				</div>

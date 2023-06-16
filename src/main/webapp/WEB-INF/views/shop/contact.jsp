@@ -7,10 +7,10 @@
 		<div
 			class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 			<div class="col-first">
-				<h1>Contact us</h1>
+				<h1>Liên hệ với chúng tôi</h1>
 				<nav class="d-flex align-items-center">
-					<a href="/shop/home">Home<span class="lnr lnr-arrow-right"></span></a>
-					<a href="/shop/contact">Contact us</a>
+					<a href="/shop/home">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/contact">Liên hệ với chúng tôi</a>
 				</nav>
 			</div>
 		</div>
@@ -24,14 +24,12 @@
 					<div class="info_item">
 						<i class="lnr lnr-home"></i>
 						<h6>Cái Răng,TP Cần Thơ</h6>
-						<p> Đường số 8, Thường Thạnh, Cái Răng, Cần Thơ</p>
+						<p>Đường số 8, Thường Thạnh, Cái Răng, Cần Thơ</p>
 					</div>
 					<div class="info_item">
 						<i class="lnr lnr-phone-handset"></i>
 						<h6>
-							<a href="#">(0292) 7300 468
-
-</a>
+							<a href="#">(0292) 7300 468 </a>
 						</h6>
 						<p>Thứ Hai đến Thứ Sáu 9 giờ sáng đến 6 giờ chiều</p>
 					</div>
@@ -40,7 +38,8 @@
 						<h6>
 							<a href="#">phucvdpc03426@fpt.edu.vn</a>
 						</h6>
-						<p>Hãy gửi câu hỏi của bạn bất cứ lúc nào! Tôi sẽ cố gắng trả lời nhanh nhất có thể.</p>
+						<p>Hãy gửi câu hỏi của bạn bất cứ lúc nào! Tôi sẽ cố gắng trả
+							lời nhanh nhất có thể.</p>
 					</div>
 				</div>
 			</div>
@@ -78,8 +77,8 @@
 						</div>
 					</div>
 					<div class="col-md-12 text-right">
-						<button type="submit" value="submit" class="primary-btn">Send
-							Message</button>
+						<button type="submit" value="submit" class="primary-btn">Gửi
+							tin nhắn</button>
 					</div>
 				</form:form>
 			</div>

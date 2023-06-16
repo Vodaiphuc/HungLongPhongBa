@@ -7,10 +7,10 @@
 		<div
 			class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 			<div class="col-first">
-				<h1>Favorites list</h1>
+				<h1>danh sách yêu thích</h1>
 				<nav class="d-flex align-items-center">
-					<a href="/shop/home">Home<span class="lnr lnr-arrow-right"></span></a>
-					<a href="/shop/like">Favorites list</a>
+					<a href="/shop/home">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/like">danh sách yêu thích</a>
 				</nav>
 			</div>
 		</div>
@@ -21,18 +21,18 @@
 	<div class="container">
 		<div class="section">
 			<c:if test="${empty list }">
-				<h3 class="title_confirmation text-center text-danger m-4">You
-					have not liked any products yet.</h3>
+				<h3 class="title_confirmation text-center text-danger m-4">Bạn
+					chưa thích sản phẩm nào.</h3>
 			</c:if>
 			<c:if test="${not empty list }">
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
 							<div class="serial">#</div>
-							<div class="image">Product image</div>
-							<div class="name">Product name</div>
-							<div class="day">Like day</div>
-							<div class="action">Action</div>
+							<div class="image">Hình ảnh sản phẩm</div>
+							<div class="name">Tên sản phẩm</div>
+							<div class="day">Like Ngày</div>
+							<div class="action">Hoạt động</div>
 						</div>
 						<c:forEach var="item" items="${list }" varStatus="loopCounter">
 							<div class="table-row">

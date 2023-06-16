@@ -7,11 +7,11 @@
 		<div
 			class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 			<div class="col-first">
-				<h1>Checkout</h1>
+				<h1>Thủ tục thanh toán</h1>
 				<nav class="d-flex align-items-center">
-					<a href="/shop/home">Home<span class="lnr lnr-arrow-right"></span></a>
-					<a href="/shop/cart">Cart<span class="lnr lnr-arrow-right"></span></a>
-					<a href="/shop/checkout">Checkout</a>
+					<a href="/shop/home">Trang Chủ<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/cart">Giỏ hàng<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/checkout">Thủ tục thanh toán </a>
 				</nav>
 			</div>
 		</div>
@@ -20,24 +20,24 @@
 <section class="checkout_area section_gap">
 	<div class="container">
 		<c:if test="${empty cart }">
-			<h3 class="title_confirmation text-center text-danger m-4">You
-				have no items in your shopping cart.</h3>
+			<h3 class="title_confirmation text-center text-danger m-4">Bạn
+				không có sản phẩm nào trong giỏ hàng của bạn .</h3>
 		</c:if>
 		<c:if test="${not empty cart }">
 			<c:if test="${sessionScope['shop'] == null}">
 				<div class="returning_customer">
 					<div class="check_title">
 						<h2>
-							Returning Customer? <a href="/shop/account/login">Click here
-								to login</a>
+							Phản hồi khách hàng? <a href="/shop/account/login">Nhấn vào
+								đây để đăng nhập </a>
 						</h2>
 					</div>
-					<p>If you have shopped with us before, please enter your
-						details in the boxes below. If you are a new customer, please
-						proceed to the Billing & Shipping section.</p>
+					<p>Nếu bạn đã mua sắm với chúng tôi trước đây, vui lòng nhập
+						thông tin chi tiết của bạn vào các ô bên dưới. Nếu bạn là khách
+						hàng mới, vui lòng chuyển sang phần Thanh toán & Vận chuyển.</p>
 					<div class="col-md-12 form-group">
-						<a class="lost_pass" href="/shop/account/forgot-password">Lost
-							your password?</a>
+						<a class="lost_pass" href="/shop/account/forgot-password">Quên
+							mật khẩu? </a>
 					</div>
 				</div>
 			</c:if>
@@ -90,7 +90,7 @@
 								</div>
 								<div class="col-md-12 form-group">
 									<div class="creat_account">
-										<h3>Shipping Details</h3>
+										<h3>chi tiết vận chuyển</h3>
 									</div>
 									<form:textarea path="note" class="form-control" rows="1"
 										placeholder="Order Notes"></form:textarea>
@@ -99,11 +99,11 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="order_box">
-								<h2>Your Order</h2>
+								<h2>đơn đặt hàng của bạn</h2>
 								<c:set var="subtotal" value="0" />
 								<c:set var="totalDiscount" value="0" />
 								<ul class="list">
-									<li><a href="#">Product <span>Total</span></a></li>
+									<li><a href="#">Sản phẩm <span>Tổng cộng</span></a></li>
 									<c:forEach var="item" items="${cart }" varStatus="loopCounter">
 										<li><a href="/shop/product-detail?id=${item.product_id }">${item.name }
 												<span class="middle">x ${item.quantity }</span> <span
@@ -121,21 +121,21 @@
 									</c:forEach>
 								</ul>
 								<ul class="list list_2">
-									<li><a href="#">Subtotal <span>$${subtotal }</span></a></li>
-									<li><a href="#">TotalDiscount <span>$${totalDiscount
+									<li><a href="#">tổng phụ <span>$${subtotal }</span></a></li>
+									<li><a href="#">Tổng khấu trừ <span>$${totalDiscount
 												}</span></a></li>
-									<li><a href="#">Total <span>$${subtotal -
+									<li><a href="#">Tổng cộng <span>$${subtotal -
 												totalDiscount }</span></a></li>
 								</ul>
 								<div class="payment_item">
 									<div class="radion_btn">
 										<form:radiobutton path="pay" id="f-option5" name="pay"
 											checked="checked" value="check payments" />
-										<label for="f-option5">Check payments</label>
+										<label for="f-option5">Kiểm tra thanh toán </label>
 										<div class="check"></div>
 									</div>
-									<p>Please send a check to Store Name, Store Street, Store
-										Town, Store State / County, Store Postcode.</p>
+									<p>Vui lòng gửi séc tới Tên cửa hàng, Phố cửa hàng, Thị
+										trấn cửa hàng, Bang / Hạt cửa hàng, Mã bưu điện cửa hàng.</p>
 								</div>
 								<div class="payment_item active">
 									<div class="radion_btn">
@@ -146,10 +146,10 @@
 											alt="">
 										<div class="check"></div>
 									</div>
-									<p>Pay via PayPal; you can pay with your credit card if you
-										don’t have a PayPal account.</p>
+									<p>Thanh toán qua PayPal; bạn có thể thanh toán bằng thẻ
+										tín dụng nếu bạn không có tài khoản PayPal.</p>
 								</div>
-								<button class="primary-btn" type="submit">Proceed to
+								<button class="primary-btn" type="submit">Tiến hành
 									Paypal</button>
 							</div>
 						</div>

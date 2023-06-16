@@ -14,7 +14,7 @@ import com.example.validator.constraint.PhoneValidator;
 @Target({ ElementType.METHOD, ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Phone {
-	public String message() default "Wrong phone number format +84";
+	public String message() default "Định dạng số điện thoại sai +84";
 
 	public Class<?>[] groups() default {};
 

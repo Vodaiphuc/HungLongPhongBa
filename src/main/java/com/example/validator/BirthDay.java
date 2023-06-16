@@ -14,7 +14,7 @@ import com.example.validator.constraint.BirthDayValidator;
 @Target({ ElementType.METHOD, ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface BirthDay {
-	public String message() default "Age must be between 18 and 30 years old";
+	public String message() default "Tuổi phải từ 18 đến 30 tuổi";
 
 	public Class<?>[] groups() default {};
 

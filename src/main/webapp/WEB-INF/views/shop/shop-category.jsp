@@ -7,12 +7,12 @@
 		<div
 			class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 			<div class="col-first">
-				<h1>Shop Category page</h1>
+				<h1>Trang danh mục cửa hàng</h1>
 				<nav class="d-flex align-items-center">
-					<a href="/shop/home">Home<span class="lnr lnr-arrow-right"></span></a> <a
-						href="/shop/shop-category">Shop<span
-						class="lnr lnr-arrow-right"></span></a> <a href="/shop/shop-category">Fashon
-						Category</a>
+					<a href="/shop/home">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/shop-category">Cửa hàng<span
+						class="lnr lnr-arrow-right"></span></a> <a href="/shop/shop-category">Hạng
+						mục thời trang </a>
 				</nav>
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 	<div class="row">
 		<div class="col-xl-3 col-lg-4 col-md-5">
 			<div class="sidebar-categories">
-				<div class="head">Categories</div>
+				<div class="head">Thể loại</div>
 				<ul class="main-categories">
 					<c:forEach var="item" items="${categories }">
 						<li class="main-nav-list"><a
@@ -31,7 +31,7 @@
 				</ul>
 			</div>
 			<div class="sidebar-categories">
-				<div class="head">Brands</div>
+				<div class="head">Nhãn hiệu</div>
 				<ul class="main-categories">
 					<c:forEach var="item" items="${brands }">
 						<li class="main-nav-list"><a
@@ -40,7 +40,7 @@
 				</ul>
 			</div>
 			<div class="sidebar-categories">
-				<div class="head">Colors</div>
+				<div class="head">Màu sắc</div>
 				<ul class="main-categories">
 					<c:forEach var="item" items="${colors }">
 						<li class="main-nav-list"><a
@@ -128,8 +128,8 @@
 			<!-- Start Best Seller -->
 			<section class="lattest-product-area pb-40 category-list">
 				<c:if test="${empty resultPage.content }">
-					<h3 class="title_confirmation text-center text-danger m-4">No
-						product.</h3>
+					<h3 class="title_confirmation text-center text-danger m-4">
+						Không sản phẩm.</h3>
 				</c:if>
 				<c:if test="${not empty resultPage.content }">
 					<div class="row">
@@ -138,8 +138,9 @@
 							varStatus="loopCounter">
 							<div class="col-lg-4 col-md-6">
 								<div class="single-product">
-									<a href="/shop/product-detail?id=${item.id }"><img class="img-fluid"
-										src="/uploads/${item.banner }" alt="Banner product"></a>
+									<a href="/shop/product-detail?id=${item.id }"><img
+										class="img-fluid" src="/uploads/${item.banner }"
+										alt="Banner product"></a>
 									<div class="product-details">
 										<h6>${item.name }</h6>
 										<div class="price">
@@ -159,18 +160,16 @@
 											</c:if>
 										</div>
 										<div class="prd-bottom">
-											<a href="/shop/cart/add?id=${item.id }" class="social-info"> <span class="ti-bag"></span>
-												<p class="hover-text">add to bag</p>
-											</a> 
-											
-											<a href="/shop/like/add?id=${item.id }" class="social-info"> <span
-												class="lnr lnr-heart"></span>
-												<p class="hover-text">Wishlist</p>
-											</a> 
-											
-											<a href="/shop/shop-category?categoryProduct_id=${item.categoryProduct.id }&size=40" class="social-info"> <span
-												class="lnr lnr-move"></span>
-												<p class="hover-text">view more</p>
+											<a href="/shop/cart/add?id=${item.id }" class="social-info">
+												<span class="ti-bag"></span>
+												<p class="hover-text">thêm vào giỏ hàng</p>
+											</a> <a href="/shop/like/add?id=${item.id }" class="social-info">
+												<span class="lnr lnr-heart"></span>
+												<p class="hover-text">danh sách yêu thích</p>
+											</a> <a
+												href="/shop/shop-category?categoryProduct_id=${item.categoryProduct.id }&size=40"
+												class="social-info"> <span class="lnr lnr-move"></span>
+												<p class="hover-text">xem thêm</p>
 											</a>
 										</div>
 									</div>

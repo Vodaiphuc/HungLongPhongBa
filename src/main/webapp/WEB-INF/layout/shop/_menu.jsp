@@ -7,7 +7,7 @@
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<a class="navbar-brand logo_h" href="/shop/home"><img
-					src="<c:url value="/static/shop/img/logo.png" />" alt=""></a>
+					src="<c:url value="/static/shop/img/phongba.png" />" alt=""></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent"
 					aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -19,51 +19,54 @@
 				<div class="collapse navbar-collapse offset"
 					id="navbarSupportedContent">
 					<ul class="nav navbar-nav menu_nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="/shop/home">Home</a></li>
+						<li class="nav-item active"><a class="nav-link"
+							href="/shop/home">Trang chủ</a></li>
 						<li class="nav-item submenu dropdown"><a href="#"
 							class="nav-link dropdown-toggle" data-toggle="dropdown"
-							role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+							role="button" aria-haspopup="true" aria-expanded="false">Cửa
+								hàng</a>
 							<ul class="dropdown-menu">
 								<li class="nav-item"><a class="nav-link"
-									href="/shop/shop-category">Shop Category</a></li>
-								<li class="nav-item"><a class="nav-link" href="/shop/checkout">Product
-										Checkout</a></li>
-								<li class="nav-item"><a class="nav-link" href="/shop/cart">Shopping
-										Cart</a></li>
+									href="/shop/shop-category">Danh mục cửa hàng</a></li>
+								<li class="nav-item"><a class="nav-link"
+									href="/shop/checkout">Thanh toán sản phẩm ​</a></li>
+								<li class="nav-item"><a class="nav-link" href="/shop/cart">Giỏ
+										hàng </a></li>
 							</ul></li>
-						<li class="nav-item"><a class="nav-link" href="/shop/contact">Contact</a></li>
+						<li class="nav-item"><a class="nav-link" href="/shop/contact">Liên
+								hệ</a></li>
 						<li class="nav-item submenu dropdown"><a href="#"
 							class="nav-link dropdown-toggle" data-toggle="dropdown"
 							role="button" aria-haspopup="true" aria-expanded="false"><c:if
 									test="${sessionScope['shop'] != null}">
 									<c:out value="${sessionScope['shop'].getFullName()}" />
 								</c:if> <c:if test="${sessionScope['shop'] == null}">
-									Account
+									Tài Khoản
 								</c:if></a>
 							<ul class="dropdown-menu">
 								<c:if test="${sessionScope['shop'] != null}">
 									<li class="nav-item"><a class="nav-link"
-										href="/shop/account/change-information">Change information</a></li>
+										href="/shop/account/change-information">Thay đổi thông tin</a></li>
 									<li class="nav-item"><a class="nav-link"
-										href="/shop/account/change-password">Change password</a></li>
-									<li class="nav-item"><a class="nav-link" href="/shop/order-history">Order
-											history</a></li>
-									<li class="nav-item"><a class="nav-link" href="/shop/like">Favorites
-											list</a></li>
-									<li class="nav-item"><a class="nav-link" href="/shop/review">Review
-											history</a></li>
+										href="/shop/account/change-password">Đổi mật khẩu</a></li>
 									<li class="nav-item"><a class="nav-link"
-										href="/shop/account/logout">Logout</a></li>
+										href="/shop/order-history">Lịch sử đơn hàng</a></li>
+									<li class="nav-item"><a class="nav-link" href="/shop/like">danh
+											sách yêu thích </a></li>
+									<li class="nav-item"><a class="nav-link"
+										href="/shop/review">Xem lại lịch sử </a></li>
+									<li class="nav-item"><a class="nav-link"
+										href="/shop/account/logout">Đăng xuất</a></li>
 								</c:if>
 								<c:if test="${sessionScope['shop'] == null}">
 									<li class="nav-item"><a class="nav-link"
-										href="/shop/account/login">Login</a></li>
+										href="/shop/account/login">Đăng nhập</a></li>
 									<li class="nav-item"><a class="nav-link"
-										href="/shop/account/register">Register</a></li>
+										href="/shop/account/register">Đăng ký</a></li>
 									<li class="nav-item"><a class="nav-link"
-										href="/shop/account/forgot-password">Forgot password</a></li>
+										href="/shop/account/forgot-password">Quên mật khẩu</a></li>
 									<li class="nav-item"><a class="nav-link"
-										href="/shop/tracking">Tracking</a></li>
+										href="/shop/tracking">theo dõi</a></li>
 								</c:if>
 							</ul></li>
 					</ul>

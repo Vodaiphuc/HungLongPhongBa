@@ -7,31 +7,31 @@
 			<div class="col-lg-6 no-padding exclusive-left">
 				<div class="row clock_sec clockdiv" id="clockdiv">
 					<div class="col-lg-12">
-						<h1>Exclusive Hot Deal Ends Soon!</h1>
-						<p>Who are in extremely love with eco friendly system.</p>
+						<h1>Ưu đãi hấp dẫn độc quyền sắp kết thúc!</h1>
+						<p>Những người cực kỳ yêu thích hệ thống thân thiện với môi trường.</p>
 					</div>
 					<div class="col-lg-12">
 						<div class="row clock-wrap">
 							<div class="col clockinner1 clockinner">
 								<h1 class="days">150</h1>
-								<span class="smalltext">Days</span>
+								<span class="smalltext">Ngày</span>
 							</div>
 							<div class="col clockinner clockinner1">
 								<h1 class="hours">23</h1>
-								<span class="smalltext">Hours</span>
+								<span class="smalltext">Giờ</span>
 							</div>
 							<div class="col clockinner clockinner1">
 								<h1 class="minutes">47</h1>
-								<span class="smalltext">Mins</span>
+								<span class="smalltext">Phút</span>
 							</div>
 							<div class="col clockinner clockinner1">
 								<h1 class="seconds">59</h1>
-								<span class="smalltext">Secs</span>
+								<span class="smalltext">Giây</span>
 							</div>
 						</div>
 					</div>
 				</div>
-				<a href="" class="primary-btn">Shop Now</a>
+				<a href="" class="primary-btn">Mua Ngay</a>
 			</div>
 			<div class="col-lg-6 no-padding exclusive-right">
 				<div class="active-exclusive-product-slider">
@@ -44,11 +44,11 @@
 								<h6>$150.00</h6>
 								<h6 class="l-through">$210.00</h6>
 							</div>
-							<h4>addidas New Hammer sole for Sports person</h4>
+							<h4>đế addidas New Hammer dành cho người chơi thể thao</h4>
 							<div
 								class="add-bag d-flex align-items-center justify-content-center">
 								<a class="add-btn" href=""><span class="ti-bag"></span></a> <span
-									class="add-text text-uppercase">Add to Bag</span>
+									class="add-text text-uppercase">thêm vào giỏ hàng</span>
 							</div>
 						</div>
 					</div>
@@ -61,11 +61,11 @@
 								<h6>$150.00</h6>
 								<h6 class="l-through">$210.00</h6>
 							</div>
-							<h4>addidas New Hammer sole for Sports person</h4>
+							<h4>đế addidas New Hammer dành cho người chơi thể thao</h4>
 							<div
 								class="add-bag d-flex align-items-center justify-content-center">
 								<a class="add-btn" href=""><span class="ti-bag"></span></a> <span
-									class="add-text text-uppercase">Add to Bag</span>
+									class="add-text text-uppercase">thêm vào giỏ hàng</span>
 							</div>
 						</div>
 					</div>

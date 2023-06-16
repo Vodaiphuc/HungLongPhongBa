@@ -6,7 +6,7 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-6 text-center">
 				<div class="section-title">
-					<h1>Deals of the Week</h1>
+					<h1>Ưu đãi trong tuần</h1>
 				</div>
 			</div>
 		</div>

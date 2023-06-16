@@ -11,8 +11,8 @@
 						<img src="<c:url value="/static/shop/img/features/f-icon1.png" />"
 							alt="">
 					</div>
-					<h6>Free Delivery</h6>
-					<p>Free Shipping on all order</p>
+					<h6>Giao hàng miễn phí</h6>
+					<p>Miễn phí vận chuyển trên tất cả các đơn hàng</p>
 				</div>
 			</div>
 			<!-- single features -->
@@ -22,8 +22,8 @@
 						<img src="<c:url value="/static/shop/img/features/f-icon2.png" />"
 							alt="">
 					</div>
-					<h6>Return Policy</h6>
-					<p>Free Shipping on all order</p>
+					<h6>Chính sách đổi trả</h6>
+					<p>Miễn phí vận chuyển trên tất cả các đơn hàng</p>
 				</div>
 			</div>
 			<!-- single features -->
@@ -33,8 +33,8 @@
 						<img src="<c:url value="/static/shop/img/features/f-icon3.png" />"
 							alt="">
 					</div>
-					<h6>24/7 Support</h6>
-					<p>Free Shipping on all order</p>
+					<h6>Hỗ trợ 24/7</h6>
+					<p>Miễn phí vận chuyển trên tất cả các đơn hàng</p>
 				</div>
 			</div>
 			<!-- single features -->
@@ -44,8 +44,8 @@
 						<img src="<c:url value="/static/shop/img/features/f-icon4.png" />"
 							alt="">
 					</div>
-					<h6>Secure Payment</h6>
-					<p>Free Shipping on all order</p>
+					<h6>Thanh toán an toàn</h6>
+					<p>Miễn phí vận chuyển trên tất cả các đơn hàng</p>
 				</div>
 			</div>
 		</div>

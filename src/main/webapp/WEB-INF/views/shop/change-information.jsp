@@ -7,10 +7,10 @@
 		<div
 			class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 			<div class="col-first">
-				<h1>Change information</h1>
+				<h1>Thay đổi thông tin</h1>
 				<nav class="d-flex align-items-center">
-					<a href="/shop/home">Home<span class="lnr lnr-arrow-right"></span></a> <a
-						href="/shop/account/change-information">Change information</a>
+					<a href="/shop/home">trang chủ<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/account/change-information">Thay đổi thông tin</a>
 				</nav>
 			</div>
 		</div>
@@ -21,80 +21,83 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="login_form_inner">
-				<h3 class="text-center">Change information an account</h3>
-				<c:if test="${not empty error}">
-					<b class="error text-danger"> <c:out value="${error}" />
-					</b>
-				</c:if>
-				<form:form action="/shop/account/change-information"
-					modelAttribute="user" method="post" class="row login_form"
-					id="contactForm" enctype="multipart/form-data">
-					<form:hidden path="id" />
-					<div class="col-md-12">
-						<div class="row">
-							<div class="col-md-3">
-								<img src="/uploads/${user.avatar}" id="avatar" alt="" class="img-fluid">
-							</div>
-							<div class="col-md-9 mt-sm-20">
-								<input type="file"
-									onchange="readImageUser(this);" id="file" name="file">
+					<h3 class="text-center">Thay đổi thông tin tài khoản</h3>
+					<c:if test="${not empty error}">
+						<b class="error text-danger"> <c:out value="${error}" />
+						</b>
+					</c:if>
+					<form:form action="/shop/account/change-information"
+						modelAttribute="user" method="post" class="row login_form"
+						id="contactForm" enctype="multipart/form-data">
+						<form:hidden path="id" />
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-3">
+									<img src="/uploads/${user.avatar}" id="avatar" alt=""
+										class="img-fluid">
+								</div>
+								<div class="col-md-9 mt-sm-20">
+									<input type="file" onchange="readImageUser(this);" id="file"
+										name="file">
+								</div>
 							</div>
 						</div>
-					</div>
-					<script>
-						function readImageUser(input) {
-							if (input.files && input.files[0]) {
-								var reader = new FileReader();
+						<script>
+							function readImageUser(input) {
+								if (input.files && input.files[0]) {
+									var reader = new FileReader();
 
-								reader.onload = function(e) {
-									$('#avatar').attr('src', e.target.result);
-								};
+									reader.onload = function(e) {
+										$('#avatar').attr('src',
+												e.target.result);
+									};
 
-								reader.readAsDataURL(input.files[0]);
+									reader.readAsDataURL(input.files[0]);
+								}
 							}
-						}
-					</script>
-					<div class="col-md-12 form-group">
-						<form:input path="email" class="form-control" placeholder="Email"
-							onfocus="this.placeholder = ''"
-							onblur="this.placeholder = 'Email'" />
-						<form:errors path="email" class="error text-danger" />
-					</div>
-					<div class="col-md-12 form-group">
-						<form:input path="fullName" class="form-control"
-							placeholder="Full name" onfocus="this.placeholder = ''"
-							onblur="this.placeholder = 'Full name'" />
-						<form:errors path="fullName" class="error text-danger" />
-					</div>
-					<div class="col-md-12 form-group">
-						<form:input path="birthDay" type="date" class="form-control"
-							placeholder="Birth day" onfocus="this.placeholder = ''"
-							onblur="this.placeholder = 'Birth day'" />
-						<form:errors path="birthDay" class="error text-danger" />
-					</div>
-					<div class="col-md-12 form-group">
-						<form:input path="address" class="form-control"
-							placeholder="Address" onfocus="this.placeholder = ''"
-							onblur="this.placeholder = 'Address'" />
-					</div>
-					<div class="col-md-12 form-group">
-						<form:input path="addressOrder" class="form-control"
-							placeholder="Address order" onfocus="this.placeholder = ''"
-							onblur="this.placeholder = 'Address order'" />
-					</div>
-					<div class="col-md-12 form-group">
-						<div class="form-select">
-							<form:select path="gender">
-								<form:option value="true">Male</form:option>
-								<form:option value="false">Female</form:option>
-							</form:select>
+						</script>
+						<div class="col-md-12 form-group">
+							<form:input path="email" class="form-control" placeholder="Email"
+								onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Email'" />
+							<form:errors path="email" class="error text-danger" />
 						</div>
-					</div>
-					<div class="col-md-12 form-group">
-						<button type="submit" value="submit" class="primary-btn">Change
-							information</button>
-					</div>
-				</form:form></div>
+						<div class="col-md-12 form-group">
+							<form:input path="fullName" class="form-control"
+								placeholder="Full name" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Full name'" />
+							<form:errors path="fullName" class="error text-danger" />
+						</div>
+						<div class="col-md-12 form-group">
+							<form:input path="birthDay" type="date" class="form-control"
+								placeholder="Birth day" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Birth day'" />
+							<form:errors path="birthDay" class="error text-danger" />
+						</div>
+						<div class="col-md-12 form-group">
+							<form:input path="address" class="form-control"
+								placeholder="Address" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Address'" />
+						</div>
+						<div class="col-md-12 form-group">
+							<form:input path="addressOrder" class="form-control"
+								placeholder="Address order" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Address order'" />
+						</div>
+						<div class="col-md-12 form-group">
+							<div class="form-select">
+								<form:select path="gender">
+									<form:option value="true">Male</form:option>
+									<form:option value="false">Female</form:option>
+								</form:select>
+							</div>
+						</div>
+						<div class="col-md-12 form-group">
+							<button type="submit" value="submit" class="primary-btn">Thay
+								đổi thông tin</button>
+						</div>
+					</form:form>
+				</div>
 			</div>
 		</div>
 	</div>

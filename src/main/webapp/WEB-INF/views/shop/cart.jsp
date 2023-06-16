@@ -8,8 +8,8 @@
 			<div class="col-first">
 				<h1>Cart</h1>
 				<nav class="d-flex align-items-center">
-					<a href="/shop/home">Home<span class="lnr lnr-arrow-right"></span></a>
-					<a href="/shop/cart">Cart</a>
+					<a href="/shop/home">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+					<a href="/shop/cart">Giỏ hàng</a>
 				</nav>
 			</div>
 		</div>
@@ -18,8 +18,8 @@
 <section class="cart_area">
 	<div class="container">
 		<c:if test="${empty cart }">
-			<h3 class="title_confirmation text-center text-danger m-4">You
-				have no items in your shopping cart.</h3>
+			<h3 class="title_confirmation text-center text-danger m-4">Bạn
+				không có sản phẩm nào trong giỏ hàng của bạn .</h3>
 		</c:if>
 		<c:if test="${not empty cart }">
 			<div class="cart_inner">
@@ -28,12 +28,12 @@
 						<thead>
 							<tr>
 								<th scope="col">#</th>
-								<th scope="col">Product</th>
-								<th scope="col">Price</th>
-								<th scope="col">Discount</th>
-								<th scope="col">Quantity</th>
-								<th scope="col">Total</th>
-								<th scope="col">Action</th>
+								<th scope="col">Sản phẩm</th>
+								<th scope="col">Giá</th>
+								<th scope="col">Giảm giá</th>
+								<th scope="col">Số lượng</th>
+								<th scope="col">Tổng Tiền</th>
+								<th scope="col">Hoạt động</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -103,7 +103,7 @@
 								<td></td>
 								<td></td>
 								<td>
-									<h5>Subtotal</h5>
+									<h5>tổng phụ</h5>
 								</td>
 								<td>
 									<h5 id="totailCart">$${totailCart }</h5>
@@ -119,9 +119,10 @@
 								<td></td>
 								<td>
 									<div class="checkout_btn_inner d-flex align-items-center">
-										<a class="gray_btn" href="/shop/shop-category">Continue
-											Shopping</a> <a class="primary-btn" href="/shop/checkout">Proceed
-											to checkout</a>
+										<a class="gray_btn" href="/shop/shop-category">Tiếp tục
+											mua sắm </a> <a class="primary-btn" href="/shop/checkout">Tiến hành kiểm tra
+
+</a>
 									</div>
 								</td>
 							</tr>

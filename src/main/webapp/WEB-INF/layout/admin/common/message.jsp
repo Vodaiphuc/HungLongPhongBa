@@ -22,7 +22,7 @@
 		style="position: absolute; bottom: 20px; right: 20px; min-width: 400px; z-index: 2;">
 		<div class="card-content white-text">
 			<p>
-				<i class="material-icons">error</i> ERROR :
+				<i class="material-icons">error</i> Lỗi :
 				<c:out value="${error}" />
 			</p>
 		</div>
