@@ -9,13 +9,13 @@
 		<div class="col s12 m12 l12">
 			<div id="responsive-table" class="card card card-default scrollspy">
 				<div class="card-content">
-					<h4 class="card-title">Color list</h4>
+					<h4 class="card-title">Danh sách màu</h4>
 					<div class="row">
 						<div class="col s12">
 							<div class="row">
 								<div class="col s6 left-align">
 									<form action="/admin/color">
-										<label for="">Show
+										<label for="">Hiện
 											<div class="input-field inline">
 												<select class="select2 browser-default" name="size"
 													id="size" onchange="this.form.submit()">
@@ -43,16 +43,16 @@
 														<c:if test="${resultPage.size == 40}">selected="selected"</c:if>
 														value="40">40</option>
 												</select>
-											</div> Entities
+											</div> Sản phẩm
 										</label>
 									</form>
 								</div>
 								<div class="col s6 right-align">
 									<form action="/admin/color">
-										<label for=""> Search:
+										<label for=""> Tìm kiếm:
 											<div class="input-field inline">
 												<input name="keywords" class="size-sm"
-													placeholder="Search color name">
+													placeholder="Tìm theo tên">
 											</div>
 											<button type="submit"
 												class="btn-floating mb-1 waves-effect waves-light ">
@@ -69,21 +69,16 @@
 									<tr>
 										<th>#</th>
 										<th><a
-											href="/admin/color?field=name&keywords=${keywords }&size=${size }">Color
-												name</a></th>
+											href="/admin/color?field=name&keywords=${keywords }&size=${size }">Tên màu</a></th>
 										<th><a
-											href="/admin/color?field=createdBy.fullName&keywords=${keywords }&size=${size }">Create
-												by</a></th>
+											href="/admin/color?field=createdBy.fullName&keywords=${keywords }&size=${size }">Người tạo</a></th>
 										<th><a
-											href="/admin/color?field=createdDate&keywords=${keywords }&size=${size }">Create
-												day</a></th>
+											href="/admin/color?field=createdDate&keywords=${keywords }&size=${size }">Ngày tạo</a></th>
 										<th><a
-											href="/admin/color?field=lastModifiedBy.fullName&keywords=${keywords }&size=${size }">Update
-												by</a></th>
+											href="/admin/color?field=lastModifiedBy.fullName&keywords=${keywords }&size=${size }">Người sữa</a></th>
 										<th><a
-											href="/admin/color?field=lastModifiedDate&keywords=${keywords }&size=${size }">Update
-												day</a></th>
-										<th>Action</th>
+											href="/admin/color?field=lastModifiedDate&keywords=${keywords }&size=${size }">Ngày sữa</a></th>
+										<th>Hoạt động</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -123,8 +118,7 @@
 												<ul id="${item.id}"
 													class="sidenav slide-out-right-sidenav-chat">
 													<li class="center-align pt-2 pb-2 sidenav-close chat-head">
-														<a href="#!"><i class="material-icons mr-0">chevron_left</i>Update
-															color</a>
+														<a href="#!"><i class="material-icons mr-0">chevron_left</i>Cập nhật</a>
 													</li>
 													<li class="chat-body">
 														<div class="card-content">
@@ -143,7 +137,7 @@
 																		<button
 																			class="btn cyan waves-effect waves-light right"
 																			type="submit">
-																			Update <i class="material-icons right">send</i>
+																			Cập nhật <i class="material-icons right">send</i>
 																		</button>
 																	</div>
 																</div>
@@ -197,8 +191,7 @@
 	<aside id="right-sidebar-nav">
 		<ul id="slide-out-new" class="sidenav slide-out-right-sidenav-chat">
 			<li class="center-align pt-2 pb-2 sidenav-close chat-head"><a
-				href="#!"><i class="material-icons mr-0">chevron_left</i>New
-					color</a></li>
+				href="#!"><i class="material-icons mr-0">chevron_left</i>Màu mới</a></li>
 			<li class="chat-body">
 				<div class="card-content">
 					<form:form action="/admin/color/saveOrUpdate"
@@ -206,7 +199,7 @@
 						<div class="row">
 							<div class="input-field col s12">
 								<form:input path="name" />
-								<label for="name">Name color</label>
+								<label for="name">Tên màu</label>
 								<form:errors path="name" class="error red-text" />
 							</div>
 						</div>
@@ -214,7 +207,7 @@
 							<div class="input-field col s12">
 								<button class="btn cyan waves-effect waves-light right"
 									type="submit">
-									Save <i class="material-icons right">send</i>
+									Thêm <i class="material-icons right">send</i>
 								</button>
 							</div>
 						</div>
@@ -228,7 +221,7 @@
 	<!-- START MODAL SHOW VIEWS -->
 	<div id="modalViews" class="modal">
 		<div class="modal-content">
-			<h4>Information color</h4>
+			<h4>Danh mục màu</h4>
 			<div class="row">
 				<div class="col m6 s12">
 					<h6 class="invoice-from">ID</h6>
@@ -237,7 +230,7 @@
 					</div>
 				</div>
 				<div class="col m6 s12">
-					<h6 class="invoice-from">Category blog name</h6>
+					<h6 class="invoice-from">Tên màu</h6>
 					<div class="invoice-address">
 						<span id="viewName">Category 1.</span>
 					</div>
@@ -246,13 +239,13 @@
 			<div class="divider mb-3 mt-3"></div>
 			<div class="row">
 				<div class="col m6 s12">
-					<h6 class="invoice-from">User create</h6>
+					<h6 class="invoice-from">Người tạo</h6>
 					<div class="invoice-address">
 						<span id="viewCreatedBy">User 1.</span>
 					</div>
 				</div>
 				<div class="col m6 s12">
-					<h6 class="invoice-from">Create day</h6>
+					<h6 class="invoice-from">Ngày tạo</h6>
 					<div class="invoice-address">
 						<span id="viewCreatedDate">10/12/2022.</span>
 					</div>
@@ -261,13 +254,13 @@
 			<div class="divider mb-3 mt-3"></div>
 			<div class="row">
 				<div class="col m6 s12">
-					<h6 class="invoice-from">User update</h6>
+					<h6 class="invoice-from">Người cập nhật</h6>
 					<div class="invoice-address">
 						<span id="viewLastModifiedBy">User 1.</span>
 					</div>
 				</div>
 				<div class="col m6 s12">
-					<h6 class="invoice-from">Update day</h6>
+					<h6 class="invoice-from">Ngày cập nhật</h6>
 					<div class="invoice-address">
 						<span id="viewLastModifiedDate">10/12/2022.</span>
 					</div>
@@ -276,7 +269,7 @@
 		</div>
 		<div class="modal-footer">
 			<a href="#!"
-				class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+				class="modal-action modal-close waves-effect waves-green btn-flat">Đồng ý</a>
 		</div>
 	</div>
 </div>

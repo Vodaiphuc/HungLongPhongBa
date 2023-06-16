@@ -7,13 +7,13 @@
 		<div class="col s12 m12 l12">
 			<div id="responsive-table" class="card card card-default scrollspy">
 				<div class="card-content">
-					<h4 class="card-title">Invoice list</h4>
+					<h4 class="card-title">Danh sách hóa đơn</h4>
 					<div class="row">
 						<div class="col s12">
 							<div class="row">
 								<div class="col s6 left-align">
 									<form action="/admin/invoice">
-										<label for="">Show
+										<label for="">Hiện
 											<div class="input-field inline">
 												<select class="select2 browser-default" name="size"
 													id="size" onchange="this.form.submit()">
@@ -41,16 +41,16 @@
 														<c:if test="${resultPage.size == 40}">selected="selected"</c:if>
 														value="40">40</option>
 												</select>
-											</div> Entities
+											</div> sản phẩm
 										</label>
 									</form>
 								</div>
 								<div class="col s6 right-align">
 									<form action="/admin/invoice">
-										<label for=""> Search:
+										<label for=""> Tìm kiếm:
 											<div class="input-field inline">
 												<input name="keywords" class="size-sm"
-													placeholder="Search full name">
+													placeholder="Tìm theo tên">
 											</div>
 											<button type="submit"
 												class="btn-floating mb-1 waves-effect waves-light ">
@@ -67,20 +67,18 @@
 									<tr>
 										<th>#</th>
 										<th><a
-											href="/admin/invoice?field=fullName&keywords=${keywords }&size=${size }">Full
-												name</a></th>
+											href="/admin/invoice?field=fullName&keywords=${keywords }&size=${size }">Họ và tên</a></th>
 										<th><a
 											href="/admin/invoice?field=email&keywords=${keywords }&size=${size }">Email</a></th>
 										<th><a
-											href="/admin/invoice?field=status&keywords=${keywords }&size=${size }">Status</a></th>
+											href="/admin/invoice?field=status&keywords=${keywords }&size=${size }">Trạng thái</a></th>
 										<th><a
-											href="/admin/invoice?field=pay&keywords=${keywords }&size=${size }">Pay</a></th>
+											href="/admin/invoice?field=pay&keywords=${keywords }&size=${size }">Chi trả</a></th>
 										<th><a
-											href="/admin/invoice?field=createdDate&keywords=${keywords }&size=${size }">Day
-												order</a></th>
-										<th>Quantity</th>
-										<th>Totail</th>
-										<th>Action</th>
+											href="/admin/invoice?field=createdDate&keywords=${keywords }&size=${size }">Ngày đặt hàng</a></th>
+										<th>Số lượng</th>
+										<th>Còn lại</th>
+										<th>Hoạt động</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -186,26 +184,25 @@
 	<!-- START MODAL SHOW EDIT -->
 	<div id="modalEdit" class="modal">
 		<div class="modal-content">
-			<h4>Edit invoice</h4>
+			<h4>Cập nhật hóa đơn</h4>
 			<input type="hidden" id="hiddenId" />
 			<div class="row">
 				<div class="col m6 s12">
-					<h6 class="invoice-from">Status</h6>
+					<h6 class="invoice-from">Trạng thái</h6>
 					<div class="invoice-address">
 						<p>
 							<label> <input name="status" id="status1" type="radio"
-								value="delivered" checked /> <span class="green-text">Delivered</span>
+								value="delivered" checked /> <span class="green-text">Đã giao hàng</span>
 							</label> <label> <input name="status" id="status2" type="radio"
-								value="being transported" /> <span class="orange-text">Being
-									transported</span>
+								value="being transported" /> <span class="orange-text">Đang vận chuyển</span>
 							</label> <label> <input name="status" id="status3" type="radio"
-								value="waiting" /> <span class="red-text">Waiting</span>
+								value="waiting" /> <span class="red-text">Đang xử lý</span>
 							</label>
 						</p>
 					</div>
 				</div>
 				<div class="col m6 s12">
-					<h6 class="invoice-from">Pay</h6>
+					<h6 class="invoice-from">Chi trả</h6>
 					<div class="invoice-address">
 						<p>
 							<label> <input name="pay" id="pay1" type="radio" value="paypal"
@@ -221,7 +218,7 @@
 		</div>
 		<div class="modal-footer">
 			<a href="#!" onclick="updateInvoice()"
-				class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+				class="modal-action modal-close waves-effect waves-green btn-flat">Đồng ý</a>
 		</div>
 	</div>
 </div>

@@ -9,13 +9,13 @@
 		<div class="col s12 m12 l12">
 			<div id="responsive-table" class="card card card-default scrollspy">
 				<div class="card-content">
-					<h2 class="card-title">User list</h2>
+					<h2 class="card-title">Danh sách người dùng</h2>
 					<div class="row">
 						<div class="col s12">
 							<div class="row">
 								<div class="col s6 left-align">
 									<form action="/admin/user">
-										<label for="">Show
+										<label for="">Hiện
 											<div class="input-field inline">
 												<select class="select2 browser-default" name="size"
 													id="size" onchange="this.form.submit()">
@@ -43,16 +43,16 @@
 														<c:if test="${resultPage.size == 40}">selected="selected"</c:if>
 														value="40">40</option>
 												</select>
-											</div> Entities
+											</div> cột
 										</label>
 									</form>
 								</div>
 								<div class="col s6 right-align">
 									<form action="/admin/user">
-										<label for=""> Search:
+										<label for=""> Tìm:
 											<div class="input-field inline">
 												<input name="keywords" class="size-sm"
-													placeholder="Search full name">
+													placeholder="Tìm theo tên">
 											</div>
 											<button type="submit"
 												class="btn-floating mb-1 waves-effect waves-light ">
@@ -69,27 +69,23 @@
 									<tr>
 										<th>#</th>
 										<th><a
-											href="/admin/user?field=fullName&keywords=${keywords }&size=${size}">Full
-												name</a></th>
-										<th>Avatar</th>
+											href="/admin/user?field=fullName&keywords=${keywords }&size=${size}">Họ và tên</a></th>
+										<th>Ảnh</th>
 										<th><a
 											href="/admin/user?field=email&keywords=${keywords }&size=${size}">Email</a></th>
 										<th><a
-											href="/admin/user?field=gender&keywords=${keywords }&size=${size}">Gender</a></th>
+											href="/admin/user?field=gender&keywords=${keywords }&size=${size}">Giới tính</a></th>
 										<th><a
-											href="/admin/user?field=birthDay&keywords=${keywords }&size=40">Birth
-												day</a></th>
+											href="/admin/user?field=birthDay&keywords=${keywords }&size=40">Ngày sinh</a></th>
 										<th><a
-											href="/admin/user?field=role&keywords=${keywords }&size=${size}">Role</a></th>
+											href="/admin/user?field=role&keywords=${keywords }&size=${size}">Vai trò</a></th>
 										<th><a
-											href="/admin/user?field=login&keywords=${keywords }&size=${size}">Login</a></th>
+											href="/admin/user?field=login&keywords=${keywords }&size=${size}">Đăng nhập</a></th>
 										<th><a
-											href="/admin/user?field=lastModifiedDate&keywords=${keywords }&size=${size}">Update
-												day</a></th>
+											href="/admin/user?field=lastModifiedDate&keywords=${keywords }&size=${size}">Ngày cập nhật</a></th>
 										<th><a
-											href="/admin/user?field=lastLoginDate&keywords=${keywords }&size=${size}">Last
-												login day</a></th>
-										<th>Action</th>
+											href="/admin/user?field=lastLoginDate&keywords=${keywords }&size=${size}">Ngày đăng nhập đầu tiên</a></th>
+										<th>Hoạt động</th>
 									</tr>
 								</thead>
 								<tbody>

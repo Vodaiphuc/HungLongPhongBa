@@ -9,7 +9,7 @@
 				<div class="header-search-wrapper hide-on-med-and-down">
 					<i class="material-icons">search</i> <input
 						class="header-search-input z-depth-2" type="text" name="Search"
-						placeholder="Explore Materialize">
+						placeholder="Tìm kiếm">
 					<ul class="search-list collection display-none"></ul>
 				</div>
 				<ul class="navbar-list right">
@@ -23,16 +23,11 @@
 						class="waves-effect waves-block waves-light profile-button"
 						href="javascript:void(0);" data-target="profile-dropdown"><span
 							class="avatar-status avatar-online"><img
-								src="/uploads/${sessionScope['user'].getAvatar()}"
-								alt="avatar"><i></i></span></a></li>
+								src="/uploads/${sessionScope['user'].getAvatar()}" alt="avatar"><i></i></span></a></li>
 				</ul>
 				<!-- profile-dropdown-->
-				<ul class="dropdown-content" id="profile-dropdown">
-					<li><a class="grey-text text-darken-1" href="#"><i
-							class="material-icons">person_outline</i> Profile</a></li>
-					<li class="divider"></li>
-					<li><a class="grey-text text-darken-1" href="#"><i
-							class="material-icons">keyboard_tab</i> Logout</a></li>
+				<ul class="dropdown-content" id="profile-dropdown" >
+					<li><a class="grey-text text-darken-1" href="/admin/dashboard/logout">Đăng Xuất</a></li>
 				</ul>
 			</div>
 		</nav>

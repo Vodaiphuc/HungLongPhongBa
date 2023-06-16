@@ -8,7 +8,7 @@
 			<div class="input-field">
 				<div class="row">
 					<div class="col s12 m1">
-						<span>Filter by year: </span>
+						<span>Thống kê theo năm: </span>
 					</div>
 					<div class="col s12 m3">
 						<form action="/admin/statistical/user">
@@ -39,11 +39,11 @@
 
 <div id="chartjs-bar-chart" class="card">
 	<div class="card-content">
-		<h4 class="card-title">Chart of visits, orders</h4>
+		<h4 class="card-title">Biểu đồ lượt truy cập, đơn hàng</h4>
 		<div class="row">
 			<div class="col s12">
-				<p class="mb-2">This chart summarizes the months by each year
-					you choose.</p>
+				<p class="mb-2">Biểu đồ này tóm tắt các tháng theo từng năm
+bạn chọn.</p>
 				<div class="sample-chart-wrapper">
 					<canvas id="chart-visit-order" height="500"></canvas>
 				</div>
@@ -60,9 +60,8 @@
 				<div class="card-title">
 					<div class="row">
 						<div class="col s12 m6 l10">
-							<h4 class="card-title">List of liked and rated user</h4>
-							<p>Displays a tabular list sorted by likes and ratings from
-								high to low.</p>
+							<h4 class="card-title">Danh sách người dùng đã thích và xếp hạng</h4>
+<p>Hiển thị danh sách dạng bảng được sắp xếp theo lượt thích và xếp hạng từ
 						</div>
 					</div>
 				</div>
@@ -73,10 +72,9 @@
 								<ul class="tabs tab-demo-active z-depth-1 cyan">
 									<li class="tab col m6"><a
 										class="white-text waves-effect waves-light active"
-										href="#like">List like user</a></li>
+										href="#like">Danh sách yêu thích</a></li>
 									<li class="tab col m6"><a
-										class="white-text waves-effect waves-light" href="#review">List
-											review product</a></li>
+										class="white-text waves-effect waves-light" href="#review">Danh sách đánh giá sản phẩm</a></li>
 								</ul>
 							</div>
 							<div class="col s12">
@@ -85,9 +83,9 @@
 										<thead>
 											<tr>
 												<th>#</th>
-												<th>Full name</th>
-												<th>Avatar</th>
-												<th>Number of likes</th>
+												<th>Họ và tên</th>
+												<th>Ảnh</th>
+												<th>Số lượt thích</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -110,11 +108,11 @@
 										<thead>
 											<tr>
 												<th>#</th>
-												<th>Full name</th>
-												<th>Avatar</th>
-												<th>Number of review</th>
-												<th>Totail star</th>
-												<th>Average number of stars</th>
+												<th>Họ và tên</th>
+												<th>Ảnh</th>
+												<th>Số lượt đánh giá</th>
+												<th>Tổng số sao</th>
+												<th>Số sao trung bình</th>
 											</tr>
 										</thead>
 										<tbody>

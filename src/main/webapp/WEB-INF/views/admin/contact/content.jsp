@@ -49,7 +49,7 @@
 											</div>
 										</div>
 										<div class="input-field col s12">
-											<a class="btn reply-btn right">Reply</a>
+											<a class="btn reply-btn right">Gửi</a>
 										</div>
 									</form>
 								</div>

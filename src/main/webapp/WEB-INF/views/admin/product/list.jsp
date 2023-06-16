@@ -9,7 +9,7 @@
 		<div class="col s12 m3 l2 pr-0 hide-on-med-and-down animate fadeLeft">
 			<div class="card">
 				<div class="card-content">
-					<span class="card-title">Categories</span>
+					<span class="card-title">Danh mục</span>
 					<hr class="p-0 mb-10">
 					<ul class="collapsible categories-collapsible">
 						<c:forEach var="item" items="${categoryProducts }"
@@ -22,7 +22,7 @@
 							</li>
 						</c:forEach>
 					</ul>
-					<span class="card-title mt-10">Color</span>
+					<span class="card-title mt-10">Màu</span>
 					<hr class="p-0 mb-10">
 					<div class="display-grid">
 						<c:forEach var="item" items="${colors }" varStatus="loopCounter">
@@ -48,7 +48,7 @@
 							</c:choose>
 						</c:forEach>
 					</div>
-					<span class="card-title mt-10">Brand</span>
+					<span class="card-title mt-10">Thương hiệu</span>
 					<hr class="p-0 mb-10">
 					<div class="display-grid">
 						<c:forEach var="item" items="${brands }" varStatus="loopCounter">
@@ -58,7 +58,7 @@
 							</b></a>
 						</c:forEach>
 					</div>
-					<span class="card-title mt-10">Customer Ratings</span>
+					<span class="card-title mt-10"> Đánh giá của khách hàng</span>
 					<hr class="p-0 mb-10">
 					<div class="display-grid">
 						<a href="/admin/product?star=5&field=${field }&size=${size }"><label><span>
@@ -93,13 +93,13 @@
 		<div class="col s12 m12 l10 pr-0">
 			<div id="responsive-table" class="card card card-default scrollspy">
 				<div class="card-content">
-					<h4 class="card-title">Product list</h4>
+					<h4 class="card-title">Danh sách sản phẩm</h4>
 					<div class="row">
 						<div class="col s12">
 							<div class="row">
 								<div class="col s6 left-align">
 									<form action="/admin/product">
-										<label for="">Show
+										<label for="">Hiện
 											<div class="input-field inline">
 												<select class="select2 browser-default" name="size"
 													id="size" onchange="this.form.submit()">
@@ -127,16 +127,16 @@
 														<c:if test="${resultPage.size == 40}">selected="selected"</c:if>
 														value="40">40</option>
 												</select>
-											</div> Entities
+											</div> sản phẩm
 										</label>
 									</form>
 								</div>
 								<div class="col s6 right-align">
 									<form action="/admin/product">
-										<label for=""> Search:
+										<label for=""> Tìm:
 											<div class="input-field inline">
 												<input name="keywords" class="size-sm"
-													placeholder="Search product name">
+													placeholder="Tìm tên sản phẩm">
 											</div>
 											<button type="submit"
 												class="btn-floating mb-1 waves-effect waves-light ">
@@ -153,31 +153,24 @@
 									<tr>
 										<th>#</th>
 										<th><a
-											href="/admin/product?field=name&keywords=${keywords }&size=${size }">Product
-												name</a></th>
-										<th>Banner</th>
+											href="/admin/product?field=name&keywords=${keywords }&size=${size }">Tên sản phẩm</a></th>
+										<th>Ảnh</th>
 										<th><a
-											href="/admin/product?field=price&keywords=${keywords }&size=${size }">Price</a></th>
+											href="/admin/product?field=price&keywords=${keywords }&size=${size }">Giá</a></th>
 										<th><a
-											href="/admin/product?field=discount&keywords=${keywords }&size=${size }">Discount</a></th>
-										<th>Status discount</th>
-										<!-- <th><a -->
-										<%-- href="/admin/product?field=startDayDiscount&keywords=${keywords }&size=${size }">Start --%>
-										<!-- day discount</a></th> -->
-										<!-- <th><a -->
-										<%-- href="/admin/product?field=endDayDiscount&keywords=${keywords }&size=${size }">End --%>
-										<!-- day discount</a></th> -->
+											href="/admin/product?field=discount&keywords=${keywords }&size=${size }">Giảm giá</a></th>
+										<th>Tình trạng giảm giá</th>
 										<th><a
-											href="/admin/product?field=quantity&keywords=${keywords }&size=${size }">Quantity</a></th>
+											href="/admin/product?field=quantity&keywords=${keywords }&size=${size }">Số lượng</a></th>
 										<th><a
 											href="/admin/product?field=active&keywords=${keywords }&size=${size }">Active</a></th>
 										<th><a
-											href="/admin/product?field=brand.name&keywords=${keywords }&size=${size }">Brand</a></th>
+											href="/admin/product?field=brand.name&keywords=${keywords }&size=${size }">Thương hiệu</a></th>
 										<th><a
-											href="/admin/product?field=color.name&keywords=${keywords }&size=${size }">Color</a></th>
+											href="/admin/product?field=color.name&keywords=${keywords }&size=${size }">màu</a></th>
 										<th><a
-											href="/admin/product?field=categoryProduct.name&keywords=${keywords }&size=${size }">Category</a></th>
-										<th>Action</th>
+											href="/admin/product?field=categoryProduct.name&keywords=${keywords }&size=${size }">Loại</a></th>
+										<th>Đồng ý</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -291,7 +284,7 @@
 	<!-- START MODAL SHOW VIEWS -->
 	<div id="modalViews" class="modal">
 		<div class="modal-content">
-			<h4>Information product</h4>
+			<h4>Chi tiết sản phẩm</h4>
 			<div class="row">
 				<div class="col m6 s12">
 					<h6 class="invoice-from">ID</h6>
@@ -300,7 +293,7 @@
 					</div>
 				</div>
 				<div class="col m6 s12">
-					<h6 class="invoice-from">Product name</h6>
+					<h6 class="invoice-from">Tên sản phẩm</h6>
 					<div class="invoice-address">
 						<span id="viewName">Category 1.</span>
 					</div>
@@ -309,13 +302,13 @@
 			<div class="divider mb-3 mt-3"></div>
 			<div class="row">
 				<div class="col m6 s12">
-					<h6 class="invoice-from">Price</h6>
+					<h6 class="invoice-from">Giá tiền</h6>
 					<div class="invoice-address">
 						<span id="viewPrice">User 1.</span>
 					</div>
 				</div>
 				<div class="col m6 s12">
-					<h6 class="invoice-from">Discount</h6>
+					<h6 class="invoice-from">Giảm giá</h6>
 					<div class="invoice-address">
 						<span id="viewDiscount">10/12/2022.</span>
 					</div>
@@ -324,13 +317,13 @@
 			<div class="divider mb-3 mt-3"></div>
 			<div class="row">
 				<div class="col m6 s12">
-					<h6 class="invoice-from">Start day discount</h6>
+					<h6 class="invoice-from">Ngày bắt đầu giảm giá</h6>
 					<div class="invoice-address">
 						<span id="viewStartDayDiscount">User 1.</span>
 					</div>
 				</div>
 				<div class="col m6 s12">
-					<h6 class="invoice-from">End day discount</h6>
+					<h6 class="invoice-from">Ngày kết thúc giảm giá</h6>
 					<div class="invoice-address">
 						<span id="viewEndDayDiscount">10/12/2022.</span>
 					</div>
@@ -339,13 +332,13 @@
 			<div class="divider mb-3 mt-3"></div>
 			<div class="row">
 				<div class="col m4 s12">
-					<h6 class="invoice-from">Views</h6>
+					<h6 class="invoice-from">Đánh giá</h6>
 					<div class="invoice-address">
 						<span id="viewViews">User 1.</span>
 					</div>
 				</div>
 				<div class="col m4 s12">
-					<h6 class="invoice-from">Quantity</h6>
+					<h6 class="invoice-from">Số lượng</h6>
 					<div class="invoice-address">
 						<span id="viewQuantity">10/12/2022.</span>
 					</div>
@@ -360,7 +353,7 @@
 			<div class="divider mb-3 mt-3"></div>
 			<div class="row">
 				<div class="col m12 s12">
-					<h6 class="invoice-from">Description</h6>
+					<h6 class="invoice-from">Miêu tả</h6>
 					<div class="invoice-address">
 						<span id="viewDescription">User 1.</span>
 					</div>
@@ -369,25 +362,25 @@
 			<div class="divider mb-3 mt-3"></div>
 			<div class="row">
 				<div class="col m3 s12">
-					<h6 class="invoice-from">Width</h6>
+					<h6 class="invoice-from">Rộng</h6>
 					<div class="invoice-address">
 						<span id="viewWidth">User 1.</span>
 					</div>
 				</div>
 				<div class="col m3 s12">
-					<h6 class="invoice-from">Height</h6>
+					<h6 class="invoice-from">Cao</h6>
 					<div class="invoice-address">
 						<span id="viewHeight">User 1.</span>
 					</div>
 				</div>
 				<div class="col m3 s12">
-					<h6 class="invoice-from">Depth</h6>
+					<h6 class="invoice-from">Sâu</h6>
 					<div class="invoice-address">
 						<span id="viewDepth">User 1.</span>
 					</div>
 				</div>
 				<div class="col m3 s12">
-					<h6 class="invoice-from">Weight</h6>
+					<h6 class="invoice-from">Cân nặng</h6>
 					<div class="invoice-address">
 						<span id="viewWeight">User 1.</span>
 					</div>
@@ -396,19 +389,19 @@
 			<div class="divider mb-3 mt-3"></div>
 			<div class="row">
 				<div class="col m4 s12">
-					<h6 class="invoice-from">Brand</h6>
+					<h6 class="invoice-from">Thương hiệu</h6>
 					<div class="invoice-address">
 						<span id="viewBrand">User 1.</span>
 					</div>
 				</div>
 				<div class="col m4 s12">
-					<h6 class="invoice-from">Category product</h6>
+					<h6 class="invoice-from">Loại sản phẩm</h6>
 					<div class="invoice-address">
 						<span id="viewCategoryProduct">10/12/2022.</span>
 					</div>
 				</div>
 				<div class="col m4 s12">
-					<h6 class="invoice-from">Color</h6>
+					<h6 class="invoice-from">Màu</h6>
 					<div class="invoice-address">
 						<span id="viewColor">10/12/2022.</span>
 					</div>
@@ -417,13 +410,13 @@
 			<div class="divider mb-3 mt-3"></div>
 			<div class="row">
 				<div class="col m6 s12">
-					<h6 class="invoice-from">User create</h6>
+					<h6 class="invoice-from">Người tạo</h6>
 					<div class="invoice-address">
 						<span id="viewCreatedBy">User 1.</span>
 					</div>
 				</div>
 				<div class="col m6 s12">
-					<h6 class="invoice-from">Create day</h6>
+					<h6 class="invoice-from">Ngày tạo</h6>
 					<div class="invoice-address">
 						<span id="viewCreatedDate">10/12/2022.</span>
 					</div>
@@ -432,26 +425,24 @@
 			<div class="divider mb-3 mt-3"></div>
 			<div class="row">
 				<div class="col m6 s12">
-					<h6 class="invoice-from">User update</h6>
+					<h6 class="invoice-from">Người cập nhật</h6>
 					<div class="invoice-address">
 						<span id="viewLastModifiedBy">User 1.</span>
 					</div>
 				</div>
 				<div class="col m6 s12">
-					<h6 class="invoice-from">Update day</h6>
+					<h6 class="invoice-from">Ngày cập nhật</h6>
 					<div class="invoice-address">
 						<span id="viewLastModifiedDate">10/12/2022.</span>
 					</div>
 				</div>
 			</div>
 			<div class="divider mb-3 mt-3"></div>
-			<div class="row" id="tbodyExample">
-				
-			</div>
+			<div class="row" id="tbodyExample"></div>
 		</div>
 		<div class="modal-footer">
 			<a href="#!"
-				class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+				class="modal-action modal-close waves-effect waves-green btn-flat">Đồng ý</a>
 		</div>
 	</div>
 </div>

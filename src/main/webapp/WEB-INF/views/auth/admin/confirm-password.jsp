@@ -95,11 +95,6 @@
 										<a href="/auth/admin/login">Login</a>
 									</p>
 								</div>
-								<div class="input-field col s6 m6 l6">
-									<p class="margin right-align medium-small">
-										<a href="/auth/admin/register">Register</a>
-									</p>
-								</div>
 							</div>
 						</form:form>
 					</div>

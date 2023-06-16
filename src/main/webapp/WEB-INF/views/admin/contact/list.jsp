@@ -9,7 +9,7 @@
 				<div class="app-search">
 					<i class="material-icons mr-2 search-icon"
 						onchange="this.form.submit()">search</i> <input type="text" name="keywords"
-						placeholder="Search full name" class="app-filter"
+						placeholder="Tìm theo tên" class="app-filter"
 						id="email_filter">
 				</div>
 			</form>
