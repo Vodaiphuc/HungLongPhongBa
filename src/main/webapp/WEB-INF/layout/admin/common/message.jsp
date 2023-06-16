@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <c:if test="${not empty message}">
 	<div class="card-alert card gradient-45deg-green-teal"
@@ -12,7 +12,7 @@
 		</div>
 		<button type="button" class="close white-text" data-dismiss="alert"
 			aria-label="Close">
-			<span aria-hidden="true">×</span>
+			<span aria-hidden="true">Ã—</span>
 		</button>
 	</div>
 </c:if>
@@ -28,7 +28,7 @@
 		</div>
 		<button type="button" class="close white-text" data-dismiss="alert"
 			aria-label="Close">
-			<span aria-hidden="true">×</span>
+			<span aria-hidden="true">Ã—</span>
 		</button>
 	</div>
 </c:if>

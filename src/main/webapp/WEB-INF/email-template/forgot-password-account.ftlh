@@ -210,8 +210,8 @@
 																		style="font-size: 12px; font-family: 'Playfair Display', Georgia, serif; mso-line-height-alt: 14.399999999999999px; color: #44464a; line-height: 1.2;">
 																		<p
 																			style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 16.8px;">
-																			<span style="font-size:30px;">Do not share
-																				this message with anyone!</span>
+																			<span style="font-size:30px;">Xin đừng chia sẻ
+																			tin nhắn này với bất kỳ ai!</span>
 																		</p>
 																	</div>
 																</div>
@@ -252,11 +252,7 @@
 																		style="font-size: 12px; mso-line-height-alt: 18px; color: #44464a; line-height: 1.5; font-family: Nunito, Arial, Helvetica Neue, Helvetica, sans-serif;">
 																		<p
 																			style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 21px;">
-																			Below is the code to confirm, for security
-																			reasons do not share this code with anyone.
-																			Note, the code is only valid for 15 minutes
-																			from the time you receive this email. After
-																			that time the code will expire.</p>
+																			Dưới đây là mã xác nhận, vì lý do bảo mật, vui lòng không chia sẻ mã này với bất kỳ ai. Lưu ý, mã chỉ có hiệu lực trong vòng 15 phút kể từ thời điểm bạn nhận được email này. Sau thời gian đó, mã sẽ hết hạn..</p>
 																	</div>
 																</div>
 															</td>
@@ -342,12 +338,7 @@
 																		</p>
 																		<p
 																			style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 18px;">
-																			<span style="font-size:12px;">Integer eget
-																				nibh vel massa gravida ullamcorper. Sed
-																				a viverra ante. Nullam posuere
-																				pellentesque lectus, nec vehicula felis
-																				rutrum ac. Maecenas porta facilisis
-																				turpis, eget imperdiet purus.</span>
+																			<span style="font-size:12px;">Số nguyên được sử dụng để tăng trọng lượng của khối. Đặt một cuộc sống trước. Phép cộng chắc chắn của Nullam, và xe hơi là một cách để làm cho tình huống khó khăn hơn. Cổng vào của Maecenas dễ dàng, và có thể chống lại sự bắt chước của bản thân.</span>
 																		</p>
 																	</div>
 																</div>
@@ -365,7 +356,7 @@
 																		style="font-size: 12px; mso-line-height-alt: 14.399999999999999px; color: #b2b2b2; line-height: 1.2; font-family: Nunito, Arial, Helvetica Neue, Helvetica, sans-serif;">
 																		<p
 																			style="margin: 0; text-align: center; mso-line-height-alt: 14.399999999999999px;">
-																			© Copyright 2022. YourBrand All Rights
+																			© Copyright 2023. YourBrand All Rights
 																			Reserved.</p>
 																		<p
 																			style="margin: 0; text-align: center; mso-line-height-alt: 14.399999999999999px;">

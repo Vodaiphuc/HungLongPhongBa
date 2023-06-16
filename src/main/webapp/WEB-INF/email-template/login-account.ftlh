@@ -210,8 +210,7 @@
 																		style="font-size: 12px; font-family: 'Playfair Display', Georgia, serif; mso-line-height-alt: 14.399999999999999px; color: #44464a; line-height: 1.2;">
 																		<p
 																			style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 16.8px;">
-																			<span style="font-size:30px;">Thank you for
-																				using the site!</span>
+																			<span style="font-size:30px;">Cảm ơn bạn đã sử dụng trang web này!</span>
 																		</p>
 																	</div>
 																</div>
@@ -252,25 +251,12 @@
 																		style="font-size: 12px; mso-line-height-alt: 18px; color: #44464a; line-height: 1.5; font-family: Nunito, Arial, Helvetica Neue, Helvetica, sans-serif;">
 																		<p
 																			style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 21px;">
-																			First of all, we kamarshoponline would like to
-																			send our sincere and deepest thanks to
-																			customers who have trusted and used our
-																			services in the past time. This is a
-																			priceless gift for us. Thanks to the trust
-																			of our customers, we have the success today.
+																			Đầu tiên, chúng tôi, Hùng Long Phong Bá, xin gửi lời cảm ơn chân thành và sâu sắc đến những khách hàng đã tin tưởng và sử dụng dịch vụ của chúng tôi trong thời gian qua. Điều này là món quà vô giá đối với chúng tôi. Nhờ vào sự tin tưởng của khách hàng, chúng tôi có được thành công ngày hôm nay.
 
-																			With the business philosophy of putting
-																			customers as the center, we promise to
-																			constantly improve to improve the quality of
-																			products and services, to give customers the
-																			best shopping experience in return for their
-																			trust. your ideas for us. Hopefully in the
-																			near future, we will continue to receive
-																			your trust.
+Với triết lý kinh doanh đặt khách hàng là trung tâm, chúng tôi cam kết liên tục cải tiến để nâng cao chất lượng sản phẩm và dịch vụ, để mang đến cho khách hàng trải nghiệm mua sắm tốt nhất như là sự đáp lại sự tin tưởng của họ. Chúng tôi luôn lắng nghe ý kiến và ý tưởng của quý khách. Hy vọng trong tương lai gần, chúng tôi sẽ tiếp tục nhận được sự tin tưởng từ quý khách.
 
-																			Once again, we would like to express our
-																			sincere thanks to our customers. Wish you
-																			always good health, luck and success!</p>
+Một lần nữa, chúng tôi xin gửi lời cảm ơn chân thành đến khách hàng của chúng tôi. Chúc quý khách luôn có sức khỏe tốt, may mắn và thành công!
+</p>
 																	</div>
 																</div>
 															</td>
@@ -288,8 +274,8 @@
 																		style="text-decoration:none;display:inline-block;color:#68a0a9;background-color:transparent;border-radius:28px;width:auto;border-top:1px solid #68A0A9;font-weight:undefined;border-right:1px solid #68A0A9;border-bottom:1px solid #68A0A9;border-left:1px solid #68A0A9;padding-top:5px;padding-bottom:5px;font-family:Nunito, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:16px;text-align:center;mso-border-alt:none;word-break:keep-all;"
 																		target="_blank"><span
 																			style="padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:normal;"><span
-																				style="word-break: break-word; line-height: 32px;">View
-																				More</span></span></a>
+																				style="word-break: break-word; line-height: 32px;">Xem
+																				Thêm</span></span></a>
 																	<!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
 																</div>
 															</td>
@@ -363,7 +349,7 @@
 																		style="font-size: 12px; mso-line-height-alt: 14.399999999999999px; color: #b2b2b2; line-height: 1.2; font-family: Nunito, Arial, Helvetica Neue, Helvetica, sans-serif;">
 																		<p
 																			style="margin: 0; text-align: center; mso-line-height-alt: 14.399999999999999px;">
-																			© Copyright 2022. YourBrand All Rights
+																			© Copyright 2023. YourBrand All Rights
 																			Reserved.</p>
 																		<p
 																			style="margin: 0; text-align: center; mso-line-height-alt: 14.399999999999999px;">

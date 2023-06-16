@@ -12,10 +12,10 @@ import com.example.service.StorageService;
 
 @SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
 @EnableConfigurationProperties(StorageProperties.class)
-public class KamarShopApplication {
+public class HungLongPhongBa {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KamarShopApplication.class, args);
+		SpringApplication.run(HungLongPhongBa.class, args);
 	}
 
 	@Bean

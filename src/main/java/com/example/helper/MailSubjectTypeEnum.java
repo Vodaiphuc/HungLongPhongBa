@@ -1,7 +1,7 @@
 package com.example.helper;
 
 public enum MailSubjectTypeEnum {
-	THANK("Thank you"),
+	THANK("Cảm Ơn "),
 	VERIFICATION("Verification");
 
 	public final String type;
