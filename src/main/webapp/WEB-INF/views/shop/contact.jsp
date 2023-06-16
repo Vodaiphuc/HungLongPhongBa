@@ -23,22 +23,24 @@
 				<div class="contact_info">
 					<div class="info_item">
 						<i class="lnr lnr-home"></i>
-						<h6>TP Da Nang, Viet Nam</h6>
-						<p>137 Nguyen Thi Thap, Thanh Khe Tay, Lien Chieu, Da Nang</p>
+						<h6>Cái Răng,TP Cần Thơ</h6>
+						<p> Đường số 8, Thường Thạnh, Cái Răng, Cần Thơ</p>
 					</div>
 					<div class="info_item">
 						<i class="lnr lnr-phone-handset"></i>
 						<h6>
-							<a href="#">02363710999</a>
+							<a href="#">(0292) 7300 468
+
+</a>
 						</h6>
-						<p>Mon to Fri 9am to 6 pm</p>
+						<p>Thứ Hai đến Thứ Sáu 9 giờ sáng đến 6 giờ chiều</p>
 					</div>
 					<div class="info_item">
 						<i class="lnr lnr-envelope"></i>
 						<h6>
-							<a href="#">kamarShop@gmail.com</a>
+							<a href="#">phucvdpc03426@fpt.edu.vn</a>
 						</h6>
-						<p>Send us your query anytime!</p>
+						<p>Hãy gửi câu hỏi của bạn bất cứ lúc nào! Tôi sẽ cố gắng trả lời nhanh nhất có thể.</p>
 					</div>
 				</div>
 			</div>

@@ -18,7 +18,7 @@ public class MailInfo {
 	private String mailType;
 
 	public MailInfo(String to, String subject, String body, String mailType) {
-		this.from = "Kamar Shop online <phucvdpc03426@fpt.edu.vn>";
+		this.from = "Hung Long Phong Ba Shop online <phucvdpc03426@fpt.edu.vn>";
 		this.to = to;
 		this.subject = subject;
 		this.body = body;

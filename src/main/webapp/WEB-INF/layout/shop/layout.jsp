@@ -11,7 +11,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Favicon-->
 <link rel="shortcut icon"
-	href="<c:url value="/static/shop/img/fav.png" />">
+	href="<c:url value="/static/shop/img/hunglongphongba.png" />">
 <!-- Author Meta -->
 <meta name="author" content="CodePixar">
 <!-- Meta Description -->
@@ -21,7 +21,7 @@
 <!-- meta character set -->
 <meta charset="UTF-8">
 <!-- Site Title -->
-<title>Karma Shop</title>
+<title>HungLongPhongBa</title>
 <!--
 		CSS
 		============================================= -->
