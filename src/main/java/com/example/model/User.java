@@ -58,7 +58,7 @@ public class User implements Serializable {
 	private String email;
 
 	@Column(name = "password")
-	private String password = "KamarOnlineShopping@";
+	private String password = "Hunglongphongbashop";
 
 	@Size(min = 5, message = "{size.fullName}")
 	@Column(name = "full_name")

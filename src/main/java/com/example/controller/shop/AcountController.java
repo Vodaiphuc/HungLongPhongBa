@@ -158,7 +158,7 @@ public class AcountController {
 	public String forgotPassword(Model model, @RequestParam(name = "email") String email) throws MessagingException {
 		Optional<User> user = userService.findByEmail(email);
 		if (user.isEmpty()) {
-			model.addAttribute(StatusTypeEnum.ERROR.type, "Email account not registered !");
+			model.addAttribute(StatusTypeEnum.ERROR.type, "Tài khoản email chưa được đăng ký !");
 			return PageTypeEnum.SHOP_FORGOT_PASSWORD.type;
 		}
 		int code = IntegerHelper.random5Number();
@@ -191,25 +191,25 @@ public class AcountController {
 	public String confirmPassword(Model model,
 			@Valid @ModelAttribute("confirmPassword") ConfirmPassword confirmPassword, BindingResult result) {
 		if (result.hasErrors()) {
-			model.addAttribute(StatusTypeEnum.ERROR.type, "Data format error.");
+			model.addAttribute(StatusTypeEnum.ERROR.type, "lỗi định dạng.");
 			return PageTypeEnum.SHOP_CONFIM_PASSWORD.type;
 		}
-		String code = session.get("code");
+		String code = session.get("code").toString();
 		String emailConfirm = session.get("emailConfirm");
 		String idEmailCode = session.get("idEmailCode");
 		if (!code.equals(confirmPassword.getCode())) {
-			model.addAttribute(StatusTypeEnum.ERROR.type, "Verification code does not match.");
+			model.addAttribute(StatusTypeEnum.ERROR.type, "Mã xác minh không khớp.");
 			return PageTypeEnum.SHOP_CONFIM_PASSWORD.type;
 		}
 		if (!confirmPassword.getPassword().equals(confirmPassword.getPasswordAgain())) {
-			model.addAttribute(StatusTypeEnum.ERROR.type, "Confirm password and password do not match.");
+			model.addAttribute(StatusTypeEnum.ERROR.type, "Xác nhận mật khẩu và mật khẩu không khớp.");
 			return PageTypeEnum.SHOP_CONFIM_PASSWORD.type;
 		}
-		SendMail sendMail = sendMailService.findById(idEmailCode).get();
-		if (DateHelper.checkTime15P(new Date(), sendMail.getCreatedDate())) {
-			model.addAttribute(StatusTypeEnum.ERROR.type, "Verification code timed out.");
-			return PageTypeEnum.SHOP_CONFIM_PASSWORD.type;
-		}
+//		SendMail sendMail = sendMailService.findById(idEmailCode).get();
+//		if (DateHelper.checkTime15P(new Date(), sendMail.getCreatedDate())) {
+//			model.addAttribute(StatusTypeEnum.ERROR.type, "Mã xác minh đã hết hạn.");
+//			return PageTypeEnum.SHOP_CONFIM_PASSWORD.type;
+//		}
 		User user = userService.findByEmail(emailConfirm).get();
 		user.setPassword(confirmPassword.getPassword());
 		userService.saveOrUpdate(user);

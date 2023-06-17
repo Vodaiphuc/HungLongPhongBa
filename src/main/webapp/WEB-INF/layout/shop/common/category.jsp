@@ -14,7 +14,7 @@
 							<a href="<c:url value="/static/shop/img/category/c1.jpg" />"
 								class="img-pop-up" target="_blank">
 								<div class="deal-details">
-									<h6 class="deal-title">Quần Áo Thể Thao</h6>
+									<h6 class="deal-title">Quần áo</h6>
 								</div>
 							</a>
 						</div>
@@ -27,7 +27,7 @@
 							<a href="<c:url value="/static/shop/img/category/l1.jpg" />"
 								class="img-pop-up" target="_blank">
 								<div class="deal-details">
-									<h6 class="deal-title">Quần Áo Thể Thao</h6>
+									<h6 class="deal-title">Giày</h6>
 								</div>
 							</a>
 						</div>
@@ -36,11 +36,11 @@
 						<div class="single-deal">
 							<div class="overlay"></div>
 							<img class="img-fluid w-100"
-								src="<c:url value="/static/shop/img/category/l4	.jpg" />" alt="">
-							<a href="<c:url value="/static/shop/img/category/l4.jpg" />"
+								src="<c:url value="/static/shop/img/category/p.jpg" />" alt="">
+							<a href="<c:url value="/static/shop/img/category/p.jpg" />"
 								class="img-pop-up" target="_blank">
 								<div class="deal-details">
-									<h6 class="deal-title">Sản phẩm dành cho cặp đôi</h6>
+									<h6 class="deal-title">Phụ Kiện</h6>
 								</div>
 							</a>
 						</div>
@@ -49,11 +49,11 @@
 						<div class="single-deal">
 							<div class="overlay"></div>
 							<img class="img-fluid w-100"
-								src="<c:url value="/static/shop/img/category/c4.jpg" />" alt="">
-							<a href="<c:url value="/static/shop/img/category/c4.jpg" />"
+								src="<c:url value="/static/shop/img/category/4.jpg" />" alt="">
+							<a href="<c:url value="/static/shop/img/category/4.jpg" />"
 								class="img-pop-up" target="_blank">
 								<div class="deal-details">
-									<h6 class="deal-title">Quần Áo Thể Thao</h6>
+									<h6 class="deal-title">Quần Áo thanh lịch</h6>
 								</div>
 							</a>
 						</div>
@@ -68,7 +68,7 @@
 					<a href="<c:url value="/static/shop/img/category/c5.jpg" />"
 						class="img-pop-up" target="_blank">
 						<div class="deal-details">
-							<h6 class="deal-title">Quần Áo Thể Thao</h6>
+							<h6 class="deal-title">Unisex</h6>
 						</div>
 					</a>
 				</div>

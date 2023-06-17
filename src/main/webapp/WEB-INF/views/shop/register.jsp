@@ -22,7 +22,7 @@
 			<div class="col-lg-6">
 				<div class="login_box_img">
 					<img class="img-fluid"
-						src="<c:url value="/static/shop/img/login.jpg" />" alt="">
+						src="<c:url value="/static/shop/img/hunglongphongba.png" />" alt="">
 					<div class="hover">
 						<h4>Mới vào trang web của chúng tôi?</h4>
 						<p>Có những tiến bộ đang được thực hiện trong khoa học và công

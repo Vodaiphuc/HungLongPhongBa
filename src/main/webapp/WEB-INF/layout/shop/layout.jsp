@@ -11,7 +11,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Favicon-->
 <link rel="shortcut icon"
-	href="<c:url value="/static/shop/img/hunglongphongba.png" />">
+	href="<c:url value="/static/shop/img/phongba.png" />">
 <!-- Author Meta -->
 <meta name="author" content="CodePixar">
 <!-- Meta Description -->

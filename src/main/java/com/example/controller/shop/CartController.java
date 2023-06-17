@@ -40,7 +40,7 @@ public class CartController {
 		model.addAttribute("cart", items);
 		return PageTypeEnum.SHOP_CART.type;
 	}
-
+	
 	@GetMapping(value = "/add")
 	public String add(Model model, @RequestParam(name = "id") String id) {
 		cartService.add(id);
