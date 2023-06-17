@@ -37,27 +37,27 @@
 					<table class="striped">
 						<tbody>
 							<tr>
-								<td>Created day:</td>
+								<td>Ngày tạo:</td>
 								<td><fmt:formatDate type="both"
 										value="${user.createdDate }" /></td>
 							</tr>
 							<tr>
-								<td>Update day:</td>
+								<td>Ngày cập nhật:</td>
 								<td><fmt:formatDate type="both"
 										value="${user.lastModifiedDate }" /></td>
 							</tr>
 							<tr>
-								<td>Last login day:</td>
+								<td>Ngày đăng nhập đầu tiên:</td>
 								<td><fmt:formatDate type="both"
 										value="${user.lastLoginDate }" /></td>
 							</tr>
 							<tr>
-								<td>Role:</td>
+								<td>Vai trò:</td>
 								<td><c:if test="${user.role == 'true' }">Admin</c:if> <c:if
 										test="${user.role == 'false' }">User</c:if></td>
 							</tr>
 							<tr>
-								<td>Status:</td>
+								<td>Trạng thái:</td>
 								<td><c:if test="${user.login == 'true' }">
 										<span
 											class=" users-view-status chip green lighten-5 green-text">Active</span>
@@ -79,12 +79,12 @@
 			<div class="row">
 				<div class="col s12">
 					<h6 class="mb-2 mt-2">
-						<i class="material-icons">error_outline</i> Personal Info
+						<i class="material-icons">error_outline</i> Thông tin cá nhân
 					</h6>
 					<table class="striped">
 						<tbody>
 							<tr>
-								<td>Full name:</td>
+								<td>Họ và tên:</td>
 								<td>${user.fullName }</td>
 							</tr>
 							<tr>
@@ -92,7 +92,7 @@
 								<td>${user.email }</td>
 							</tr>
 							<tr>
-								<td>Gender:</td>
+								<td>Giới tính:</td>
 								<td><c:choose>
 										<c:when test="${user.gender == 'true'}">
 											Male
@@ -106,7 +106,7 @@
 									</c:choose></td>
 							</tr>
 							<tr>
-								<td>Birthday:</td>
+								<td>Ngày sinh:</td>
 								<td><c:if test="${user.birthDay != null || user.birthDay != '' }">
 										<fmt:formatDate pattern="dd-MM-yyyy" value="${user.birthDay }" />
 									</c:if> <c:if test="${user.birthDay == null }">
@@ -114,7 +114,7 @@
 									</c:if></td>
 							</tr>
 							<tr>
-								<td>Address:</td>
+								<td>Địa chỉ:</td>
 								<td><c:if test="${user.address != null || user.address != '' }">
 										${user.address }
 									</c:if> <c:if test="${user.address == null }">
@@ -122,7 +122,7 @@
 									</c:if></td>
 							</tr>
 							<tr>
-								<td>Address order:</td>
+								<td>Địa chỉ nhận hàng:</td>
 								<td><c:if test="${user.addressOrder != null || user.addressOrder != '' }">
 										${user.addressOrder }
 									</c:if> <c:if test="${user.addressOrder == null }">
