@@ -67,15 +67,19 @@
 									<tr>
 										<th>#</th>
 										<th><a
-											href="/admin/invoice?field=fullName&keywords=${keywords }&size=${size }">Họ và tên</a></th>
+											href="/admin/invoice?field=fullName&keywords=${keywords }&size=${size }">Họ
+												và tên</a></th>
 										<th><a
 											href="/admin/invoice?field=email&keywords=${keywords }&size=${size }">Email</a></th>
 										<th><a
-											href="/admin/invoice?field=status&keywords=${keywords }&size=${size }">Trạng thái</a></th>
+											href="/admin/invoice?field=status&keywords=${keywords }&size=${size }">Trạng
+												thái</a></th>
 										<th><a
-											href="/admin/invoice?field=pay&keywords=${keywords }&size=${size }">Chi trả</a></th>
+											href="/admin/invoice?field=pay&keywords=${keywords }&size=${size }">Chi
+												trả</a></th>
 										<th><a
-											href="/admin/invoice?field=createdDate&keywords=${keywords }&size=${size }">Ngày đặt hàng</a></th>
+											href="/admin/invoice?field=createdDate&keywords=${keywords }&size=${size }">Ngày
+												đặt hàng</a></th>
 										<th>Số lượng</th>
 										<th>Còn lại</th>
 										<th>Hoạt động</th>
@@ -104,20 +108,20 @@
 											<td>${item.email }</td>
 											<td><c:if test="${item.status == 'delivered' }">
 													<span class="chip green lighten-5"><span
-														class="green-text">delivered</span></span>
+														class="green-text">Đã giao</span></span>
 												</c:if> <c:if test="${item.status == 'being transported' }">
 													<span class="chip orange lighten-5"><span
-														class="orange-text">being transported</span></span>
+														class="orange-text">Đang vận chuyển</span></span>
 												</c:if> <c:if test="${item.status == 'waiting' }">
 													<span class="chip red lighten-5"><span
-														class="red-text">waiting</span></span>
+														class="red-text">Đang xử lý</span></span>
 												</c:if></td>
 											<td><c:if test="${item.pay == 'paypal' }">
 													<span class="chip green lighten-5"><span
-														class="green-text">paypal</span></span>
+														class="green-text">Paypal</span></span>
 												</c:if> <c:if test="${item.pay == 'check payments' }">
 													<span class="chip red lighten-5"><span
-														class="red-text">check payments</span></span>
+														class="red-text">Kiểm tra thanh toán</span></span>
 												</c:if></td>
 											<td><fmt:formatDate pattern="dd-MM-yyyy"
 													value="${item.createdDate }" /></td>
@@ -191,11 +195,17 @@
 					<h6 class="invoice-from">Trạng thái</h6>
 					<div class="invoice-address">
 						<p>
-							<label> <input name="status" id="status1" type="radio"
-								value="delivered" checked /> <span class="green-text">Đã giao hàng</span>
-							</label> <label> <input name="status" id="status2" type="radio"
-								value="being transported" /> <span class="orange-text">Đang vận chuyển</span>
-							</label> <label> <input name="status" id="status3" type="radio"
+							<label class="mb-3"> <input name="status" id="status1" type="radio"
+								value="delivered" checked /> <span class="green-text">Đã
+									giao hàng</span>
+							</label>
+							<br>
+							<label class="mb-3"> <input name="status" id="status2" type="radio"
+								value="being transported" /> <span class="orange-text">Đang
+									vận chuyển</span>
+							</label>
+							<br>
+							<label class="mb-3"> <input name="status" id="status3" type="radio"
 								value="waiting" /> <span class="red-text">Đang xử lý</span>
 							</label>
 						</p>
@@ -205,11 +215,10 @@
 					<h6 class="invoice-from">Chi trả</h6>
 					<div class="invoice-address">
 						<p>
-							<label> <input name="pay" id="pay1" type="radio" value="paypal"
-								checked /> <span class="green-text">Paypal</span>
+							<label> <input name="pay" id="pay1" type="radio"
+								value="paypal" checked /> <span class="green-text">Paypal</span>
 							</label> <label> <input name="pay" id="pay2" type="radio"
-								value="check payments" /> <span class="red-text">Check
-									payments</span>
+								value="check payments" /> <span class="red-text">Kiểm tra thanh toán</span>
 							</label>
 						</p>
 					</div>
@@ -218,7 +227,8 @@
 		</div>
 		<div class="modal-footer">
 			<a href="#!" onclick="updateInvoice()"
-				class="modal-action modal-close waves-effect waves-green btn-flat">Đồng ý</a>
+				class="modal-action modal-close waves-effect waves-green btn-flat">Đồng
+				ý</a>
 		</div>
 	</div>
 </div>

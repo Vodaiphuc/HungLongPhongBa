@@ -83,8 +83,8 @@
 											href="/admin/user?field=login&keywords=${keywords }&size=${size}">Đăng nhập</a></th>
 										<th><a
 											href="/admin/user?field=lastModifiedDate&keywords=${keywords }&size=${size}">Ngày cập nhật</a></th>
-										<th><a
-											href="/admin/user?field=lastLoginDate&keywords=${keywords }&size=${size}">Ngày đăng nhập đầu tiên</a></th>
+										<%-- <th><a
+											href="/admin/user?field=lastLoginDate&keywords=${keywords }&size=${size}">Ngày đăng nhập đầu tiên</a></th> --%>
 										<th>Hoạt động</th>
 									</tr>
 								</thead>
@@ -130,8 +130,8 @@
 												</c:if></td>
 											<td><fmt:formatDate type="both"
 													value="${item.lastModifiedDate }" /></td>
-											<td><fmt:formatDate type="both"
-													value="${item.lastLoginDate }" /></td>
+											<%-- <td><fmt:formatDate type="both"
+													value="${item.lastLoginDate }" /></td> --%>
 											<td>
 												<div class="invoice-action">
 													<a class="waves-effect invoice-action-view mr-4"

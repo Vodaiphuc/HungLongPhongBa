@@ -79,7 +79,7 @@
 			<div class="row">
 				<div class="col s12">
 					<h6 class="mb-2 mt-2">
-						<i class="material-icons">error_outline</i> Personal Info
+						<i class="material-icons">error_outline</i> Thông tin cá nhân
 					</h6>
 					<table class="striped">
 						<tbody>

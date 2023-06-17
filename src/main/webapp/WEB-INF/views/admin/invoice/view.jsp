@@ -116,17 +116,17 @@
 										<span class="invoice-subtotal-title">Trạng thái: 
 											<c:if test="${order.status == 'delivered'}">
 												<span class="chip green lighten-5">
-													<span class="green-text">đã giao</span>
+													<span class="green-text">Đã giao</span>
 												</span>
 											</c:if> 
 											<c:if test="${order.status == 'being transported'}">
 												<span class="chip red lighten-5">
-													<span class="orange-text">đang vận chuyển</span>
+													<span class="orange-text">Đang vận chuyển</span>
 												</span>
 											</c:if> 
 											<c:if test="${order.status == 'waiting'}">
 												<span class="chip red lighten-5">
-													<span class="red-text">đang chờ</span>
+													<span class="red-text">Đang chờ</span>
 												</span>
 											</c:if>
 										</span>
@@ -135,12 +135,12 @@
 										<span class="invoice-subtotal-title">Phương thức thanh toán: 
 											<c:if test="${order.pay == 'paypal'}">
 												<span class="chip green lighten-5">
-													<span class="green-text">paypal</span>
+													<span class="green-text">Paypal</span>
 												</span>
 											</c:if> 
 											<c:if test="${order.pay == 'check payments'}">
 												<span class="chip red lighten-5">
-													<span class="red-text">thanh toán bằng séc</span>
+													<span class="red-text">Kiểm tra thanh toán</span>
 												</span>
 											</c:if>
 										</span>
