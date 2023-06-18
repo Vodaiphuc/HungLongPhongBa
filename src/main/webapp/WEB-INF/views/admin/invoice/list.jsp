@@ -185,10 +185,10 @@
 							<label class="mb-3" id="lbl1"> <input name="status" id="status1"
 								type="radio" value="delivered" /> <span
 								class="green-text">Đã giao hàng</span>
-							</label> <br> <label class="mb-3"> <input name="status"
+							</label> <br> <label class="mb-3" id="lbl2"> <input name="status"
 								id="status2" type="radio" value="being transported" /> <span
 								class="orange-text">Đang vận chuyển</span>
-							</label> <br> <label class="mb-3"> <input name="status"
+							</label> <br> <label class="mb-3" id="lbl3"> <input name="status"
 								id="status3" type="radio" value="waiting" /> <span
 								class="red-text">Đang xử lý</span>
 							</label>
