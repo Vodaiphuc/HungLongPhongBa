@@ -60,15 +60,19 @@ function viewApiInvoice(id) {
 		success: function(responseData) {
 			if (responseData.status == 'waiting') {
 				document.getElementById("status1").checked = false;
+				document.getElementById("status1").style.display = 'none';
 				document.getElementById("status2").checked = false;
 				document.getElementById("status3").checked = true;
 			} else if (responseData.status == 'being transported') {
 				document.getElementById("status1").checked = false;
 				document.getElementById("status2").checked = true;
 				document.getElementById("status3").checked = false;
+				document.getElementById("status3").style.display = 'none';
 			} else if (responseData.status == 'delivered') {
 				document.getElementById("status1").checked = true;
+				document.getElementById("status2").style.display = 'none';
 				document.getElementById("status2").checked = false;
+				document.getElementById("status3").style.display = 'none';
 				document.getElementById("status3").checked = false;
 			}
 
