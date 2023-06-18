@@ -154,7 +154,7 @@ public class AuthController {
 			model.addAttribute(StatusTypeEnum.ERROR.type, "Only admin account has access.");
 			return PageTypeEnum.ADMIN_FORGOT_PASSWORD.type;
 		}
-		int code = IntegerHelper.random5Number();
+		String code = String.valueOf(IntegerHelper.random5Number());
 		session.set("code", code);
 		MailInfo mailInfo = new MailInfo(email, MailSubjectTypeEnum.VERIFICATION.type, String.valueOf(code),
 				MailTypeEnum.FORGOT.type);
@@ -194,7 +194,7 @@ public class AuthController {
 			model.addAttribute(StatusTypeEnum.ERROR.type, "Data format error.");
 			return PageTypeEnum.ADMIN_CONFIRM_PASSWORD.type;
 		}
-		int code = session.get("code");
+		String code = session.get("code");
 		String emailConfirm = session.get("emailConfirm");
 		String idEmailCode = session.get("idEmailCode");
 		if (!String.valueOf(code).equals(confirmPassword.getCode())) {

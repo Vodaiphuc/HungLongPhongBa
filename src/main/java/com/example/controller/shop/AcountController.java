@@ -197,13 +197,15 @@ public class AcountController {
 		String code = session.get("code").toString();
 		String emailConfirm = session.get("emailConfirm");
 		String idEmailCode = session.get("idEmailCode");
-		if (!code.equals(confirmPassword.getCode())) {
-			model.addAttribute(StatusTypeEnum.ERROR.type, "Mã xác minh không khớp.");
-			return PageTypeEnum.SHOP_CONFIM_PASSWORD.type;
-		}
-		if (!confirmPassword.getPassword().equals(confirmPassword.getPasswordAgain())) {
-			model.addAttribute(StatusTypeEnum.ERROR.type, "Xác nhận mật khẩu và mật khẩu không khớp.");
-			return PageTypeEnum.SHOP_CONFIM_PASSWORD.type;
+		
+		  if (!code.equals(confirmPassword.getCode())) {
+		  model.addAttribute(StatusTypeEnum.ERROR.type, "Mã xác minh không khớp.");
+		  return PageTypeEnum.SHOP_CONFIM_PASSWORD.type; } if
+		  (!confirmPassword.getPassword().equals(confirmPassword.getPasswordAgain())) {
+		  model.addAttribute(StatusTypeEnum.ERROR.type,
+		  "Xác nhận mật khẩu và mật khẩu không khớp."); return
+		  PageTypeEnum.SHOP_CONFIM_PASSWORD.type;
+		 
 		}
 //		SendMail sendMail = sendMailService.findById(idEmailCode).get();
 //		if (DateHelper.checkTime15P(new Date(), sendMail.getCreatedDate())) {
