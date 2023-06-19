@@ -199,9 +199,9 @@
 					<h6 class="invoice-from">Chi trả</h6>
 					<div class="invoice-address">
 						<p>
-							<label> <input name="pay" id="pay1" type="radio"
+							<label id="paylbl1"> <input name="pay" id="pay1" type="radio"
 								value="paypal" checked /> <span class="green-text">Paypal</span>
-							</label> <label> <input name="pay" id="pay2" type="radio"
+							</label> <label id="paylbl2"> <input name="pay" id="pay2" type="radio"
 								value="check payments" /> <span class="red-text">Thanh
 									toán khi nhận hàng</span>
 							</label>

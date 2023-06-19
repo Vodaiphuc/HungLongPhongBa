@@ -72,15 +72,17 @@ function viewApiInvoice(id) {
 				document.getElementById("status1").checked = true;
 				document.getElementById("lbl2").style.display = 'none';
 				document.getElementById("status2").checked = false;
-				document.getElementById("lbbl3").style.display = 'none';
+				document.getElementById("lbl3").style.display = 'none';
 				document.getElementById("status3").checked = false;
 			}
 
 			if (responseData.pay == 'check payments') {
 				document.getElementById("pay1").checked = false;
+				document.getElementById("paylbl1").style.display = 'none';
 				document.getElementById("pay2").checked = true;
 			} else if (responseData.pay == 'paypal') {
 				document.getElementById("pay1").checked = true;
+				document.getElementById("paylbl2").style.display = 'none';
 				document.getElementById("pay2").checked = false;
 			}
 		},
