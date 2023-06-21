@@ -49,7 +49,7 @@
 				class="menu-title">Sản phẩm</span></a></li>
 		<li class="bold"><a class="waves-effect waves-cyan "
 			href="/admin/invoice"><i class="material-icons">receipt</i><span
-				class="menu-title">Hóa đơn</span></a></li>
+				class="menu-title">Đơn hàng</span></a></li>
 		<li class="bold"><a class="waves-effect waves-cyan "
 			href="/admin/contact"><i class="material-icons">import_contacts</i><span
 				class="menu-title"> Liên hệ</span></a></li>

@@ -73,7 +73,7 @@ $(window).on("load",
 							},
 							scaleLabel: {
 								display: !0,
-								labelString: "Month"
+								labelString: "Tháng"
 							}
 						}],
 						yAxes: [{
@@ -84,16 +84,16 @@ $(window).on("load",
 							},
 							scaleLabel: {
 								display: !0,
-								labelString: "Value"
+								labelString: "Số lượt"
 							}
 						}]
 					},
-					title: { display: !0, text: "Chart of likes, reviews" }
+					title: { display: !0, text: "Bảng thống kế lượt yêu thích, đánh giá trong năm" }
 				},
 				data: {
-					labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+					labels: ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12"],
 					datasets: [{
-						label: "Quantity review product",
+						label: "Số lượt đánh giá",
 						data: dataReview,
 						fill: !1,
 						borderColor: "#03a9f4",
@@ -103,7 +103,7 @@ $(window).on("load",
 						pointHoverBorderWidth: 2,
 						pointRadius: 4
 					}, {
-						label: "Quantity like product",
+						label: "Số lượt yêu thích",
 						data: dataLike,
 						fill: !1,
 						borderColor: "#ffc107",
