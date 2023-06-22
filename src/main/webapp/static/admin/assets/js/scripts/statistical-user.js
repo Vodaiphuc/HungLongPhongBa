@@ -82,17 +82,17 @@ $(window).on("load",
 							display: !0, gridLines: { color: "#f3f3f3", drawTicks: !1 },
 							scaleLabel: { display: !0 }
 						}]
-					}, title: { display: !1, text: "Chart of visits, orders" }
+					}, title: { display: !1, text: "Bảng thống kê thời gian hoạt động, số lượng đơn hàng đã đặt" }
 				}, data: {
-					labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+					labels: ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12"],
 					datasets: [{
-						label: "Access times",
+						label: "Thời gian truy cập",
 						data: dataVisit,
 						backgroundColor: "#00bcd4",
 						hoverBackgroundColor: "#00acc1",
 						borderColor: "transparent"
 					}, {
-						label: "Order count",
+						label: "Số lượng đơn đặt hàng",
 						data: dataOrder,
 						backgroundColor: "#ffeb3b",
 						hoverBackgroundColor: "#fdd835",

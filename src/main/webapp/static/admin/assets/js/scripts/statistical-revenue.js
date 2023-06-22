@@ -156,7 +156,7 @@
 					ticks: { beginAtZero: !1, fontColor: "#fff" }
 				}]
 			},
-			title: { display: !0, text: "Chart of the number of products sold by category" }
+			title: { display: !0, text: "Bảng thống kê sô lượng sản phẩm đã bán theo từng loại" }
 		}, data: i
 	}, d = e("#doughnut-chart"),
 		s = {
@@ -164,7 +164,7 @@
 			options: b = { 
 				cutoutPercentage: 70, 
 				legend: { display: !1 }, 
-				title: { display: !0, text: "Chart of the number of products sold by category" } },
+				title: { display: !0, text: "Bảng thống kê sô lượng sản phẩm đã bán theo từng loại" } },
 			data: {
 				labels: lableCategoryProduct,
 				datasets: [{
@@ -175,7 +175,7 @@
 			}
 		}, f = e("#trending-bar-chart"),
 		p = {
-			labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
+			labels: ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12"],
 			datasets: [{
 				label: "Sales",
 				data: datatotailOrderDetailByYear,
@@ -201,7 +201,7 @@
 					ticks: { beginAtZero: !0 }
 				}]
 			},
-			title: { display: !0, text: "Chart of the number of products sold by month" },
+			title: { display: !0, text: "Bảng thống kê số lượng sản phẩm đã bán trong tháng" },
 			tooltips: {
 				titleFontSize: 0,
 				callbacks: { label: function(o, e) { return o.yLabel } }

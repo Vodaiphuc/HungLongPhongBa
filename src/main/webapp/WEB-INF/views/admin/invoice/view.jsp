@@ -140,7 +140,7 @@
 											</c:if> 
 											<c:if test="${order.pay == 'check payments'}">
 												<span class="chip red lighten-5">
-													<span class="red-text">Kiểm tra thanh toán</span>
+													<span class="red-text">Thanh toán khi nhận hàng	</span>
 												</span>
 											</c:if>
 										</span>
