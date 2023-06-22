@@ -40,7 +40,7 @@ public class CartController {
 		model.addAttribute("cart", items);
 		return PageTypeEnum.SHOP_CART.type;
 	}
-	
+
 	@GetMapping(value = "/add")
 	public String add(Model model, @RequestParam(name = "id") String id) {
 		cartService.add(id);
@@ -53,14 +53,38 @@ public class CartController {
 		return TransferTypeEnum.REDIRECT.type + RequestTypeEnum.SHOP_CART.type;
 	}
 
+	/*
+	 * @PostMapping(value = "/update") public ResponseEntity<Collection<Item>>
+	 * update(Model model, @RequestParam("id") String id,
+	 * 
+	 * @RequestParam("sst") Integer quantity) { cartService.update(id, quantity);
+	 * Collection<Item> items = cartService.getItems(); return new
+	 * ResponseEntity<Collection<Item>>(items, HttpStatus.OK); }
+	 */
 	@PostMapping(value = "/update")
 	public ResponseEntity<Collection<Item>> update(Model model, @RequestParam("id") String id,
 			@RequestParam("sst") Integer quantity) {
+		// Lấy sản phẩm từ cơ sở dữ liệu
+		Product product = productService.findById(id).orElse(null);
+		if (product == null) {
+			// Không tìm thấy sản phẩm, trả về phản hồi lỗi
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+
+		// Thực hiện xác nhận số lượng
+		if (quantity <= 0 || quantity > product.getQuantity()) {
+			// Số lượng không hợp lệ, trả về phản hồi lỗi
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+		}
+
+		// Update the cart with the validated quantity
 		cartService.update(id, quantity);
+
+		// Lấy các mặt hàng đã cập nhật trong giỏ hàng
 		Collection<Item> items = cartService.getItems();
-		return new ResponseEntity<Collection<Item>>(items, HttpStatus.OK);
+		return new ResponseEntity<>(items, HttpStatus.OK);
 	}
-	
+
 	@GetMapping(value = "/find-qty")
 	public ResponseEntity<Integer> maxQty(Model model, @RequestParam(name = "id") String id) {
 		Product product = productService.findById(id).get();

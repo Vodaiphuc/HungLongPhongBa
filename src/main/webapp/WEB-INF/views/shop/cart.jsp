@@ -6,7 +6,7 @@
 		<div
 			class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 			<div class="col-first">
-				<h1>Cart</h1>
+				<h1>Giỏ Hàng</h1>
 				<nav class="d-flex align-items-center">
 					<a href="/shop/home">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
 					<a href="/shop/cart">Giỏ hàng</a>
@@ -63,7 +63,7 @@
 										<div class="product_count">
 											<input type="text" name="qty" id="sst${loopCounter.count}"
 												maxlength="12" value="${item.quantity }" title="Quantity:"
-												class="input-text qty">
+												class="input-text qty" disabled="disabled">
 											<button data-id="${item.product_id }"
 												data-name="${loopCounter.count}"
 												onclick="increase(this.getAttribute('data-id'),this.getAttribute('data-name'))"

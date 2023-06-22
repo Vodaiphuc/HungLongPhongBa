@@ -46,7 +46,7 @@
 					method="post">
 					<div class="row">
 						<div class="col-lg-6">
-							<h3>Billing Details</h3>
+							<h3>Chi tiết thanh toán</h3>
 							<c:if test="${not empty error}">
 								<b class="error text-danger"> <c:out value="${error}" />
 								</b>

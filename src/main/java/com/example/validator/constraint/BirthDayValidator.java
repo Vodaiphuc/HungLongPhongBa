@@ -15,7 +15,7 @@ public class BirthDayValidator implements ConstraintValidator<BirthDay, Date> {
 			return false;
 		int start = value.getYear();
 		int yearNow = (new Date()).getYear();
-		if (yearNow - start < 18 || yearNow - start > 30)
+		if (yearNow - start < 14 /* || yearNow - start > 30 */)
 			return false;
 		return true;
 	}
